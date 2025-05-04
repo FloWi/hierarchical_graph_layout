@@ -1,0 +1,3842 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_draw_": [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [
+        [
+          0.000,
+          0.000
+        ],
+        [
+          0.000,
+          395.000
+        ],
+        [
+          894.500,
+          395.000
+        ],
+        [
+          894.500,
+          0.000
+        ]
+      ]
+    }
+  ],
+  "bb": "0,0,894.5,395",
+  "rankdir": "LR",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "LIQUID_HYDROGEN\\nX1-AD75-C40",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              145.000,
+              336.000
+            ],
+            [
+              0.000,
+              336.000
+            ],
+            [
+              0.000,
+              295.000
+            ],
+            [
+              145.000,
+              295.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            72.500,
+            318.700
+          ],
+          "align": "c",
+          "width": 129.000,
+          "text": "LIQUID_HYDROGEN"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            72.500,
+            302.200
+          ],
+          "align": "c",
+          "width": 81.000,
+          "text": "X1-AD75-C40"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "72.5,315.5",
+      "shape": "box",
+      "width": "2.0139"
+    },
+    {
+      "_gvid": 1,
+      "name": "LIQUID_NITROGEN\\nX1-AD75-C40",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              141.620,
+              395.000
+            ],
+            [
+              3.380,
+              395.000
+            ],
+            [
+              3.380,
+              354.000
+            ],
+            [
+              141.620,
+              354.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            72.500,
+            377.700
+          ],
+          "align": "c",
+          "width": 122.250,
+          "text": "LIQUID_NITROGEN"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            72.500,
+            361.200
+          ],
+          "align": "c",
+          "width": 81.000,
+          "text": "X1-AD75-C40"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "72.5,374.5",
+      "shape": "box",
+      "width": "1.9201"
+    },
+    {
+      "_gvid": 2,
+      "name": "MICROPROCESSORS\\nX1-AD75-A3",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              688.750,
+              41.000
+            ],
+            [
+              543.000,
+              41.000
+            ],
+            [
+              543.000,
+              0.000
+            ],
+            [
+              688.750,
+              0.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            23.700
+          ],
+          "align": "c",
+          "width": 129.750,
+          "text": "MICROPROCESSORS"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            7.200
+          ],
+          "align": "c",
+          "width": 75.000,
+          "text": "X1-AD75-A3"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "615.88,20.5",
+      "shape": "box",
+      "width": "2.0243"
+    },
+    {
+      "_gvid": 3,
+      "name": "FAB_MATS\\nX1-AD75-F49",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              482.250,
+              159.000
+            ],
+            [
+              386.750,
+              159.000
+            ],
+            [
+              386.750,
+              118.000
+            ],
+            [
+              482.250,
+              118.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            141.700
+          ],
+          "align": "c",
+          "width": 69.750,
+          "text": "FAB_MATS"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            125.200
+          ],
+          "align": "c",
+          "width": 79.500,
+          "text": "X1-AD75-F49"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "434.5,138.5",
+      "shape": "box",
+      "width": "1.3264"
+    },
+    {
+      "_gvid": 4,
+      "name": "LIQUID_NITROGEN\\nX1-AD75-C41",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              322.620,
+              395.000
+            ],
+            [
+              184.380,
+              395.000
+            ],
+            [
+              184.380,
+              354.000
+            ],
+            [
+              322.620,
+              354.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            377.700
+          ],
+          "align": "c",
+          "width": 122.250,
+          "text": "LIQUID_NITROGEN"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            361.200
+          ],
+          "align": "c",
+          "width": 81.000,
+          "text": "X1-AD75-C41"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "253.5,374.5",
+      "shape": "box",
+      "width": "1.9201"
+    },
+    {
+      "_gvid": 5,
+      "name": "SILICON_CRYSTALS\\nX1-AD75-XD5A",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              326.000,
+              100.000
+            ],
+            [
+              181.000,
+              100.000
+            ],
+            [
+              181.000,
+              59.000
+            ],
+            [
+              326.000,
+              59.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            82.700
+          ],
+          "align": "c",
+          "width": 129.000,
+          "text": "SILICON_CRYSTALS"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            66.200
+          ],
+          "align": "c",
+          "width": 94.500,
+          "text": "X1-AD75-XD5A"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "253.5,79.5",
+      "shape": "box",
+      "width": "2.0139"
+    },
+    {
+      "_gvid": 6,
+      "name": "CLOTHING\\nX1-AD75-K81",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              858.500,
+              395.000
+            ],
+            [
+              760.750,
+              395.000
+            ],
+            [
+              760.750,
+              354.000
+            ],
+            [
+              858.500,
+              354.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            809.620,
+            377.700
+          ],
+          "align": "c",
+          "width": 69.000,
+          "text": "CLOTHING"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            809.620,
+            361.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-K81"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "809.62,374.5",
+      "shape": "box",
+      "width": "1.3576"
+    },
+    {
+      "_gvid": 7,
+      "name": "PLASTICS\\nX1-AD75-G50",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              483.380,
+              336.000
+            ],
+            [
+              385.620,
+              336.000
+            ],
+            [
+              385.620,
+              295.000
+            ],
+            [
+              483.380,
+              295.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            318.700
+          ],
+          "align": "c",
+          "width": 62.250,
+          "text": "PLASTICS"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            302.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-G50"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "434.5,315.5",
+      "shape": "box",
+      "width": "1.3576"
+    },
+    {
+      "_gvid": 8,
+      "name": "SILICON_CRYSTALS\\nX1-AD75-H53",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              507.000,
+              100.000
+            ],
+            [
+              362.000,
+              100.000
+            ],
+            [
+              362.000,
+              59.000
+            ],
+            [
+              507.000,
+              59.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            82.700
+          ],
+          "align": "c",
+          "width": 129.000,
+          "text": "SILICON_CRYSTALS"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            66.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-H53"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "434.5,79.5",
+      "shape": "box",
+      "width": "2.0139"
+    },
+    {
+      "_gvid": 9,
+      "name": "IRON\\nX1-AD75-H51",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              302.380,
+              218.000
+            ],
+            [
+              204.620,
+              218.000
+            ],
+            [
+              204.620,
+              177.000
+            ],
+            [
+              302.380,
+              177.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            200.700
+          ],
+          "align": "c",
+          "width": 33.000,
+          "text": "IRON"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            184.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-H51"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "253.5,197.5",
+      "shape": "box",
+      "width": "1.3576"
+    },
+    {
+      "_gvid": 10,
+      "name": "ALUMINUM_ORE\\nX1-AD75-XD5A",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              317.000,
+              277.000
+            ],
+            [
+              190.000,
+              277.000
+            ],
+            [
+              190.000,
+              236.000
+            ],
+            [
+              317.000,
+              236.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            259.700
+          ],
+          "align": "c",
+          "width": 111.000,
+          "text": "ALUMINUM_ORE"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            243.200
+          ],
+          "align": "c",
+          "width": 94.500,
+          "text": "X1-AD75-XD5A"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "253.5,256.5",
+      "shape": "box",
+      "width": "1.7639"
+    },
+    {
+      "_gvid": 11,
+      "name": "ADVANCED_CIRCUITRY\\nX1-AD75-D44",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              894.500,
+              70.000
+            ],
+            [
+              724.750,
+              70.000
+            ],
+            [
+              724.750,
+              29.000
+            ],
+            [
+              894.500,
+              29.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            809.620,
+            52.700
+          ],
+          "align": "c",
+          "width": 153.750,
+          "text": "ADVANCED_CIRCUITRY"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            809.620,
+            36.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-D44"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "809.62,49.5",
+      "shape": "box",
+      "width": "2.3576"
+    },
+    {
+      "_gvid": 12,
+      "name": "FABRICS\\nX1-AD75-E46",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              664.000,
+              395.000
+            ],
+            [
+              567.750,
+              395.000
+            ],
+            [
+              567.750,
+              354.000
+            ],
+            [
+              664.000,
+              354.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            377.700
+          ],
+          "align": "c",
+          "width": 56.250,
+          "text": "FABRICS"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            361.200
+          ],
+          "align": "c",
+          "width": 80.250,
+          "text": "X1-AD75-E46"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "615.88,374.5",
+      "shape": "box",
+      "width": "1.3368"
+    },
+    {
+      "_gvid": 13,
+      "name": "FERTILIZERS\\nX1-AD75-G50",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              484.120,
+              395.000
+            ],
+            [
+              384.880,
+              395.000
+            ],
+            [
+              384.880,
+              354.000
+            ],
+            [
+              484.120,
+              354.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            377.700
+          ],
+          "align": "c",
+          "width": 83.250,
+          "text": "FERTILIZERS"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            361.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-G50"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "434.5,374.5",
+      "shape": "box",
+      "width": "1.3785"
+    },
+    {
+      "_gvid": 14,
+      "name": "COPPER_ORE\\nX1-AD75-XD5A",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              308.750,
+              41.000
+            ],
+            [
+              198.250,
+              41.000
+            ],
+            [
+              198.250,
+              0.000
+            ],
+            [
+              308.750,
+              0.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            23.700
+          ],
+          "align": "c",
+          "width": 84.750,
+          "text": "COPPER_ORE"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            7.200
+          ],
+          "align": "c",
+          "width": 94.500,
+          "text": "X1-AD75-XD5A"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "253.5,20.5",
+      "shape": "box",
+      "width": "1.5347"
+    },
+    {
+      "_gvid": 15,
+      "name": "QUARTZ_SAND\\nX1-AD75-XD5A",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              129.620,
+              159.000
+            ],
+            [
+              15.370,
+              159.000
+            ],
+            [
+              15.370,
+              118.000
+            ],
+            [
+              129.620,
+              118.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            72.500,
+            141.700
+          ],
+          "align": "c",
+          "width": 98.250,
+          "text": "QUARTZ_SAND"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            72.500,
+            125.200
+          ],
+          "align": "c",
+          "width": 94.500,
+          "text": "X1-AD75-XD5A"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "72.5,138.5",
+      "shape": "box",
+      "width": "1.5868"
+    },
+    {
+      "_gvid": 16,
+      "name": "EQUIPMENT\\nX1-AD75-K81",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              664.750,
+              277.000
+            ],
+            [
+              567.000,
+              277.000
+            ],
+            [
+              567.000,
+              236.000
+            ],
+            [
+              664.750,
+              236.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            259.700
+          ],
+          "align": "c",
+          "width": 78.750,
+          "text": "EQUIPMENT"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            243.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-K81"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "615.88,256.5",
+      "shape": "box",
+      "width": "1.3576"
+    },
+    {
+      "_gvid": 17,
+      "name": "LIQUID_HYDROGEN\\nX1-AD75-C41",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              326.000,
+              336.000
+            ],
+            [
+              181.000,
+              336.000
+            ],
+            [
+              181.000,
+              295.000
+            ],
+            [
+              326.000,
+              295.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            318.700
+          ],
+          "align": "c",
+          "width": 129.000,
+          "text": "LIQUID_HYDROGEN"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            302.200
+          ],
+          "align": "c",
+          "width": 81.000,
+          "text": "X1-AD75-C41"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "253.5,315.5",
+      "shape": "box",
+      "width": "2.0139"
+    },
+    {
+      "_gvid": 18,
+      "name": "QUARTZ_SAND\\nX1-AD75-H53",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              310.620,
+              159.000
+            ],
+            [
+              196.380,
+              159.000
+            ],
+            [
+              196.380,
+              118.000
+            ],
+            [
+              310.620,
+              118.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            141.700
+          ],
+          "align": "c",
+          "width": 98.250,
+          "text": "QUARTZ_SAND"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            253.500,
+            125.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-H53"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "253.5,138.5",
+      "shape": "box",
+      "width": "1.5868"
+    },
+    {
+      "_gvid": 19,
+      "name": "MACHINERY\\nX1-AD75-E46",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              483.750,
+              218.000
+            ],
+            [
+              385.250,
+              218.000
+            ],
+            [
+              385.250,
+              177.000
+            ],
+            [
+              483.750,
+              177.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            200.700
+          ],
+          "align": "c",
+          "width": 82.500,
+          "text": "MACHINERY"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            184.200
+          ],
+          "align": "c",
+          "width": 80.250,
+          "text": "X1-AD75-E46"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "434.5,197.5",
+      "shape": "box",
+      "width": "1.3681"
+    },
+    {
+      "_gvid": 20,
+      "name": "ELECTRONICS\\nX1-AD75-F49",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              669.620,
+              100.000
+            ],
+            [
+              562.120,
+              100.000
+            ],
+            [
+              562.120,
+              59.000
+            ],
+            [
+              669.620,
+              59.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            82.700
+          ],
+          "align": "c",
+          "width": 91.500,
+          "text": "ELECTRONICS"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            66.200
+          ],
+          "align": "c",
+          "width": 79.500,
+          "text": "X1-AD75-F49"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "615.88,79.5",
+      "shape": "box",
+      "width": "1.4931"
+    },
+    {
+      "_gvid": 21,
+      "name": "IRON_ORE\\nX1-AD75-XD5A",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              127.750,
+              218.000
+            ],
+            [
+              17.250,
+              218.000
+            ],
+            [
+              17.250,
+              177.000
+            ],
+            [
+              127.750,
+              177.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            72.500,
+            200.700
+          ],
+          "align": "c",
+          "width": 66.750,
+          "text": "IRON_ORE"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            72.500,
+            184.200
+          ],
+          "align": "c",
+          "width": 94.500,
+          "text": "X1-AD75-XD5A"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "72.5,197.5",
+      "shape": "box",
+      "width": "1.5347"
+    },
+    {
+      "_gvid": 22,
+      "name": "COPPER\\nX1-AD75-H51",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              483.380,
+              41.000
+            ],
+            [
+              385.620,
+              41.000
+            ],
+            [
+              385.620,
+              0.000
+            ],
+            [
+              483.380,
+              0.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            23.700
+          ],
+          "align": "c",
+          "width": 51.000,
+          "text": "COPPER"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            7.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-H51"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "434.5,20.5",
+      "shape": "box",
+      "width": "1.3576"
+    },
+    {
+      "_gvid": 23,
+      "name": "SHIP_PLATING\\nX1-AD75-D44",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              670.000,
+              218.000
+            ],
+            [
+              561.750,
+              218.000
+            ],
+            [
+              561.750,
+              177.000
+            ],
+            [
+              670.000,
+              177.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            200.700
+          ],
+          "align": "c",
+          "width": 92.250,
+          "text": "SHIP_PLATING"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            615.880,
+            184.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-D44"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "615.88,197.5",
+      "shape": "box",
+      "width": "1.5035"
+    },
+    {
+      "_gvid": 24,
+      "name": "SHIP_PARTS\\nX1-AD75-D43",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              858.500,
+              217.000
+            ],
+            [
+              760.750,
+              217.000
+            ],
+            [
+              760.750,
+              176.000
+            ],
+            [
+              858.500,
+              176.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            809.620,
+            199.700
+          ],
+          "align": "c",
+          "width": 78.000,
+          "text": "SHIP_PARTS"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            809.620,
+            183.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-D43"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "809.62,196.5",
+      "shape": "box",
+      "width": "1.3576"
+    },
+    {
+      "_gvid": 25,
+      "name": "ALUMINUM\\nX1-AD75-H51",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [
+            [
+              483.380,
+              277.000
+            ],
+            [
+              385.620,
+              277.000
+            ],
+            [
+              385.620,
+              236.000
+            ],
+            [
+              483.380,
+              236.000
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            259.700
+          ],
+          "align": "c",
+          "width": 77.250,
+          "text": "ALUMINUM"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [
+            434.500,
+            243.200
+          ],
+          "align": "c",
+          "width": 81.750,
+          "text": "X1-AD75-H51"
+        }
+      ],
+      "height": "0.56944",
+      "label": "\\N",
+      "pos": "434.5,256.5",
+      "shape": "box",
+      "width": "1.3576"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 9,
+      "tail": 9,
+      "head": 19,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              302.470,
+              197.500
+            ],
+            [
+              324.260,
+              197.500
+            ],
+            [
+              350.280,
+              197.500
+            ],
+            [
+              373.360,
+              197.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              373.260,
+              201.000
+            ],
+            [
+              383.260,
+              197.500
+            ],
+            [
+              373.260,
+              194.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,384.78,197.5 302.47,197.5 324.26,197.5 350.28,197.5 373.36,197.5"
+    },
+    {
+      "_gvid": 16,
+      "tail": 17,
+      "head": 7,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              326.270,
+              315.500
+            ],
+            [
+              342.090,
+              315.500
+            ],
+            [
+              358.670,
+              315.500
+            ],
+            [
+              373.930,
+              315.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              373.800,
+              319.000
+            ],
+            [
+              383.800,
+              315.500
+            ],
+            [
+              373.800,
+              312.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,385.32,315.5 326.27,315.5 342.09,315.5 358.67,315.5 373.93,315.5"
+    },
+    {
+      "_gvid": 7,
+      "tail": 8,
+      "head": 20,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              507.430,
+              79.500
+            ],
+            [
+              521.590,
+              79.500
+            ],
+            [
+              536.370,
+              79.500
+            ],
+            [
+              550.270,
+              79.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              550.200,
+              83.000
+            ],
+            [
+              560.200,
+              79.500
+            ],
+            [
+              550.200,
+              76.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,561.71,79.5 507.43,79.5 521.59,79.5 536.37,79.5 550.27,79.5"
+    },
+    {
+      "_gvid": 23,
+      "tail": 22,
+      "head": 20,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              483.570,
+              36.310
+            ],
+            [
+              504.350,
+              43.150
+            ],
+            [
+              528.960,
+              51.240
+            ],
+            [
+              551.220,
+              58.560
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              549.910,
+              61.820
+            ],
+            [
+              560.500,
+              61.620
+            ],
+            [
+              552.090,
+              55.170
+            ]
+          ]
+        }
+      ],
+      "pos": "e,561.94,62.088 483.57,36.311 504.35,43.146 528.96,51.24 551.22,58.564"
+    },
+    {
+      "_gvid": 24,
+      "tail": 25,
+      "head": 16,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              483.570,
+              256.500
+            ],
+            [
+              505.590,
+              256.500
+            ],
+            [
+              531.900,
+              256.500
+            ],
+            [
+              555.170,
+              256.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              555.160,
+              260.000
+            ],
+            [
+              565.160,
+              256.500
+            ],
+            [
+              555.160,
+              253.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,566.67,256.5 483.57,256.5 505.59,256.5 531.9,256.5 555.17,256.5"
+    },
+    {
+      "_gvid": 5,
+      "tail": 7,
+      "head": 16,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              483.570,
+              299.690
+            ],
+            [
+              505.790,
+              292.380
+            ],
+            [
+              532.380,
+              283.630
+            ],
+            [
+              555.810,
+              275.930
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              556.830,
+              279.280
+            ],
+            [
+              565.240,
+              272.830
+            ],
+            [
+              554.640,
+              272.630
+            ]
+          ]
+        }
+      ],
+      "pos": "e,566.67,272.35 483.57,299.69 505.79,292.38 532.38,283.63 555.81,275.93"
+    },
+    {
+      "_gvid": 25,
+      "tail": 25,
+      "head": 23,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              483.570,
+              240.690
+            ],
+            [
+              504.170,
+              233.910
+            ],
+            [
+              528.540,
+              225.900
+            ],
+            [
+              550.650,
+              218.630
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              551.450,
+              222.040
+            ],
+            [
+              559.860,
+              215.600
+            ],
+            [
+              549.270,
+              215.400
+            ]
+          ]
+        }
+      ],
+      "pos": "e,561.3,215.12 483.57,240.69 504.17,233.91 528.54,225.9 550.65,218.63"
+    },
+    {
+      "_gvid": 18,
+      "tail": 19,
+      "head": 23,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              484.040,
+              197.500
+            ],
+            [
+              504.360,
+              197.500
+            ],
+            [
+              528.270,
+              197.500
+            ],
+            [
+              550.060,
+              197.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              550.050,
+              201.000
+            ],
+            [
+              560.050,
+              197.500
+            ],
+            [
+              550.050,
+              194.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,561.56,197.5 484.04,197.5 504.36,197.5 528.27,197.5 550.06,197.5"
+    },
+    {
+      "_gvid": 8,
+      "tail": 9,
+      "head": 3,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              302.470,
+              181.690
+            ],
+            [
+              324.910,
+              174.290
+            ],
+            [
+              351.820,
+              165.420
+            ],
+            [
+              375.410,
+              157.650
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              376.490,
+              160.980
+            ],
+            [
+              384.890,
+              154.520
+            ],
+            [
+              374.300,
+              154.330
+            ]
+          ]
+        }
+      ],
+      "pos": "e,386.33,154.05 302.47,181.69 324.91,174.29 351.82,165.42 375.41,157.65"
+    },
+    {
+      "_gvid": 17,
+      "tail": 18,
+      "head": 3,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              310.650,
+              138.500
+            ],
+            [
+              331.050,
+              138.500
+            ],
+            [
+              354.160,
+              138.500
+            ],
+            [
+              374.780,
+              138.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              374.760,
+              142.000
+            ],
+            [
+              384.760,
+              138.500
+            ],
+            [
+              374.760,
+              135.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,386.28,138.5 310.65,138.5 331.05,138.5 354.16,138.5 374.78,138.5"
+    },
+    {
+      "_gvid": 6,
+      "tail": 8,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              499.250,
+              58.530
+            ],
+            [
+              512.520,
+              54.170
+            ],
+            [
+              526.610,
+              49.530
+            ],
+            [
+              540.240,
+              45.050
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              541.190,
+              48.420
+            ],
+            [
+              549.590,
+              41.970
+            ],
+            [
+              539.000,
+              41.770
+            ]
+          ]
+        }
+      ],
+      "pos": "e,551.03,41.499 499.25,58.533 512.52,54.168 526.61,49.531 540.24,45.051"
+    },
+    {
+      "_gvid": 22,
+      "tail": 22,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              483.570,
+              20.500
+            ],
+            [
+              498.320,
+              20.500
+            ],
+            [
+              515.010,
+              20.500
+            ],
+            [
+              531.420,
+              20.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              531.190,
+              24.000
+            ],
+            [
+              541.190,
+              20.500
+            ],
+            [
+              531.190,
+              17.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,542.71,20.5 483.57,20.5 498.32,20.5 515.01,20.5 531.42,20.5"
+    },
+    {
+      "_gvid": 3,
+      "tail": 4,
+      "head": 13,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              322.940,
+              374.500
+            ],
+            [
+              339.460,
+              374.500
+            ],
+            [
+              356.990,
+              374.500
+            ],
+            [
+              373.110,
+              374.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              373.050,
+              378.000
+            ],
+            [
+              383.050,
+              374.500
+            ],
+            [
+              373.050,
+              371.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,384.57,374.5 322.94,374.5 339.46,374.5 356.99,374.5 373.11,374.5"
+    },
+    {
+      "_gvid": 15,
+      "tail": 16,
+      "head": 24,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              664.770,
+              241.510
+            ],
+            [
+              690.410,
+              233.490
+            ],
+            [
+              722.220,
+              223.540
+            ],
+            [
+              749.400,
+              215.030
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              750.400,
+              218.390
+            ],
+            [
+              758.900,
+              212.060
+            ],
+            [
+              748.310,
+              211.700
+            ]
+          ]
+        }
+      ],
+      "pos": "e,760.35,211.61 664.77,241.51 690.41,233.49 722.22,223.54 749.4,215.03"
+    },
+    {
+      "_gvid": 20,
+      "tail": 20,
+      "head": 24,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              651.160,
+              100.420
+            ],
+            [
+              682.820,
+              119.740
+            ],
+            [
+              730.040,
+              148.550
+            ],
+            [
+              764.510,
+              169.580
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              762.670,
+              172.560
+            ],
+            [
+              773.030,
+              174.780
+            ],
+            [
+              766.310,
+              166.580
+            ]
+          ]
+        }
+      ],
+      "pos": "e,774.32,175.57 651.16,100.42 682.82,119.74 730.04,148.55 764.51,169.58"
+    },
+    {
+      "_gvid": 12,
+      "tail": 13,
+      "head": 12,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              484.520,
+              374.500
+            ],
+            [
+              506.610,
+              374.500
+            ],
+            [
+              532.880,
+              374.500
+            ],
+            [
+              556.040,
+              374.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              555.950,
+              378.000
+            ],
+            [
+              565.950,
+              374.500
+            ],
+            [
+              555.950,
+              371.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,567.47,374.5 484.52,374.5 506.61,374.5 532.88,374.5 556.04,374.5"
+    },
+    {
+      "_gvid": 19,
+      "tail": 20,
+      "head": 11,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              670.030,
+              71.180
+            ],
+            [
+              683.460,
+              69.080
+            ],
+            [
+              698.290,
+              66.760
+            ],
+            [
+              713.110,
+              64.440
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              713.580,
+              67.910
+            ],
+            [
+              722.920,
+              62.910
+            ],
+            [
+              712.500,
+              61.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,724.41,62.675 670.03,71.183 683.46,69.083 698.29,66.763 713.11,64.444"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 11,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              689.090,
+              31.420
+            ],
+            [
+              697.050,
+              32.630
+            ],
+            [
+              705.240,
+              33.860
+            ],
+            [
+              713.420,
+              35.100
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              712.640,
+              38.520
+            ],
+            [
+              723.050,
+              36.560
+            ],
+            [
+              713.690,
+              31.600
+            ]
+          ]
+        }
+      ],
+      "pos": "e,724.55,36.784 689.09,31.422 697.05,32.626 705.24,33.864 713.42,35.101"
+    },
+    {
+      "_gvid": 11,
+      "tail": 12,
+      "head": 6,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              664.270,
+              374.500
+            ],
+            [
+              689.890,
+              374.500
+            ],
+            [
+              721.780,
+              374.500
+            ],
+            [
+              749.060,
+              374.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              748.930,
+              378.000
+            ],
+            [
+              758.930,
+              374.500
+            ],
+            [
+              748.930,
+              371.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,760.44,374.5 664.27,374.5 689.89,374.5 721.78,374.5 749.06,374.5"
+    },
+    {
+      "_gvid": 14,
+      "tail": 15,
+      "head": 18,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              129.650,
+              138.500
+            ],
+            [
+              147.050,
+              138.500
+            ],
+            [
+              166.430,
+              138.500
+            ],
+            [
+              184.550,
+              138.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              184.420,
+              142.000
+            ],
+            [
+              194.420,
+              138.500
+            ],
+            [
+              184.420,
+              135.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,195.94,138.5 129.65,138.5 147.05,138.5 166.43,138.5 184.55,138.5"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 4,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              141.940,
+              374.500
+            ],
+            [
+              151.980,
+              374.500
+            ],
+            [
+              162.390,
+              374.500
+            ],
+            [
+              172.640,
+              374.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              172.590,
+              378.000
+            ],
+            [
+              182.590,
+              374.500
+            ],
+            [
+              172.590,
+              371.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,184.1,374.5 141.94,374.5 151.98,374.5 162.39,374.5 172.64,374.5"
+    },
+    {
+      "_gvid": 13,
+      "tail": 14,
+      "head": 22,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              309.180,
+              20.500
+            ],
+            [
+              329.650,
+              20.500
+            ],
+            [
+              353.000,
+              20.500
+            ],
+            [
+              373.900,
+              20.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              373.710,
+              24.000
+            ],
+            [
+              383.710,
+              20.500
+            ],
+            [
+              373.710,
+              17.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,385.22,20.5 309.18,20.5 329.65,20.5 353,20.5 373.9,20.5"
+    },
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 17,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              145.270,
+              315.500
+            ],
+            [
+              153.210,
+              315.500
+            ],
+            [
+              161.330,
+              315.500
+            ],
+            [
+              169.390,
+              315.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              169.200,
+              319.000
+            ],
+            [
+              179.200,
+              315.500
+            ],
+            [
+              169.200,
+              312.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,180.71,315.5 145.27,315.5 153.21,315.5 161.33,315.5 169.39,315.5"
+    },
+    {
+      "_gvid": 21,
+      "tail": 21,
+      "head": 9,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              128.180,
+              197.500
+            ],
+            [
+              148.650,
+              197.500
+            ],
+            [
+              172.000,
+              197.500
+            ],
+            [
+              192.900,
+              197.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              192.710,
+              201.000
+            ],
+            [
+              202.710,
+              197.500
+            ],
+            [
+              192.710,
+              194.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,204.22,197.5 128.18,197.5 148.65,197.5 172,197.5 192.9,197.5"
+    },
+    {
+      "_gvid": 10,
+      "tail": 10,
+      "head": 25,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              317.360,
+              256.500
+            ],
+            [
+              335.710,
+              256.500
+            ],
+            [
+              355.700,
+              256.500
+            ],
+            [
+              373.840,
+              256.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              373.650,
+              260.000
+            ],
+            [
+              383.650,
+              256.500
+            ],
+            [
+              373.650,
+              253.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,385.17,256.5 317.36,256.5 335.71,256.5 355.7,256.5 373.84,256.5"
+    },
+    {
+      "_gvid": 4,
+      "tail": 5,
+      "head": 8,
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              326.270,
+              79.500
+            ],
+            [
+              334.210,
+              79.500
+            ],
+            [
+              342.330,
+              79.500
+            ],
+            [
+              350.390,
+              79.500
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              350.200,
+              83.000
+            ],
+            [
+              360.200,
+              79.500
+            ],
+            [
+              350.200,
+              76.000
+            ]
+          ]
+        }
+      ],
+      "pos": "e,361.71,79.5 326.27,79.5 334.21,79.5 342.33,79.5 350.39,79.5"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[package]
+name = "hierarchical_petgraph_layout"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+petgraph = "0.6.2"
+layout-rs = { version = "0.1.2", features = ["log"] }
+log = "0.4.27"
+itertools = "0.14.0"

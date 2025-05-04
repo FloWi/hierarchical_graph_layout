@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="1389" height="942" viewBox="0 0 1389 942" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="startarrow" markerWidth="10" markerHeight="7"
+refX="0" refY="3.5" orient="auto">
+<polygon points="10 0, 10 7, 0 3.5" fill="context-stroke" />
+</marker>
+<marker id="endarrow" markerWidth="10" markerHeight="7"
+refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="context-stroke" />
+</marker>
+
+</defs><style>
+.a14 { font-size: 14px; font-family: Times, serif; }
+</style>
+<g >
+
+            <rect x="37" y="422" width="220" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="147" y="420" class="a14"><tspan x = "147" dy="1.0em">LIQUID_HYDROGEN</tspan><tspan x = "147" dy="1.0em">X1-AD75-C40</tspan></text><g >
+
+            <rect x="37" y="30" width="220" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="147" y="28" class="a14"><tspan x = "147" dy="1.0em">LIQUID_NITROGEN</tspan><tspan x = "147" dy="1.0em">X1-AD75-C40</tspan></text><g >
+
+            <rect x="618" y="569" width="220" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="728" y="567" class="a14"><tspan x = "728" dy="1.0em">MICROPROCESSORS</tspan><tspan x = "728" dy="1.0em">X1-AD75-A3</tspan></text><g >
+
+            <rect x="646" y="226" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="728" y="224" class="a14"><tspan x = "728" dy="1.0em">FAB_MATS</tspan><tspan x = "728" dy="1.0em">X1-AD75-F49</tspan></text><g >
+
+            <rect x="331" y="30" width="220" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="441" y="28" class="a14"><tspan x = "441" dy="1.0em">LIQUID_NITROGEN</tspan><tspan x = "441" dy="1.0em">X1-AD75-C41</tspan></text><g >
+
+            <rect x="30" y="618" width="234" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="147" y="616" class="a14"><tspan x = "147" dy="1.0em">SILICON_CRYSTALS</tspan><tspan x = "147" dy="1.0em">X1-AD75-XD5A</tspan></text><g >
+
+            <rect x="1220" y="30" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="1302" y="28" class="a14"><tspan x = "1302" dy="1.0em">CLOTHING</tspan><tspan x = "1302" dy="1.0em">X1-AD75-K81</tspan></text><g >
+
+            <rect x="646" y="422" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="728" y="420" class="a14"><tspan x = "728" dy="1.0em">PLASTICS</tspan><tspan x = "728" dy="1.0em">X1-AD75-G50</tspan></text><g >
+
+            <rect x="324" y="618" width="234" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="441" y="616" class="a14"><tspan x = "441" dy="1.0em">SILICON_CRYSTALS</tspan><tspan x = "441" dy="1.0em">X1-AD75-H53</tspan></text><g >
+
+            <rect x="359" y="324" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="441" y="322" class="a14"><tspan x = "441" dy="1.0em">IRON</tspan><tspan x = "441" dy="1.0em">X1-AD75-H51</tspan></text><g >
+
+            <rect x="352" y="128" width="178" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="441" y="126" class="a14"><tspan x = "441" dy="1.0em">ALUMINUM_ORE</tspan><tspan x = "441" dy="1.0em">X1-AD75-XD5A</tspan></text><g >
+
+            <rect x="898" y="618" width="262" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="1029" y="616" class="a14"><tspan x = "1029" dy="1.0em">ADVANCED_CIRCUITRY</tspan><tspan x = "1029" dy="1.0em">X1-AD75-D44</tspan></text><g >
+
+            <rect x="947" y="30" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="1029" y="28" class="a14"><tspan x = "1029" dy="1.0em">FABRICS</tspan><tspan x = "1029" dy="1.0em">X1-AD75-E46</tspan></text><g >
+
+            <rect x="646" y="30" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="728" y="28" class="a14"><tspan x = "728" dy="1.0em">FERTILIZERS</tspan><tspan x = "728" dy="1.0em">X1-AD75-G50</tspan></text><g >
+
+            <rect x="58" y="520" width="178" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="147" y="518" class="a14"><tspan x = "147" dy="1.0em">COPPER_ORE</tspan><tspan x = "147" dy="1.0em">X1-AD75-XD5A</tspan></text><g >
+
+            <rect x="58" y="226" width="178" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="147" y="224" class="a14"><tspan x = "147" dy="1.0em">QUARTZ_SAND</tspan><tspan x = "147" dy="1.0em">X1-AD75-XD5A</tspan></text><g >
+
+            <rect x="947" y="422" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="1029" y="420" class="a14"><tspan x = "1029" dy="1.0em">EQUIPMENT</tspan><tspan x = "1029" dy="1.0em">X1-AD75-K81</tspan></text><g >
+
+            <rect x="331" y="422" width="220" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="441" y="420" class="a14"><tspan x = "441" dy="1.0em">LIQUID_HYDROGEN</tspan><tspan x = "441" dy="1.0em">X1-AD75-C41</tspan></text><g >
+
+            <rect x="359" y="226" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="441" y="224" class="a14"><tspan x = "441" dy="1.0em">QUARTZ_SAND</tspan><tspan x = "441" dy="1.0em">X1-AD75-H53</tspan></text><g >
+
+            <rect x="646" y="324" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="728" y="322" class="a14"><tspan x = "728" dy="1.0em">MACHINERY</tspan><tspan x = "728" dy="1.0em">X1-AD75-E46</tspan></text><g >
+
+            <rect x="646" y="667" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="728" y="665" class="a14"><tspan x = "728" dy="1.0em">ELECTRONICS</tspan><tspan x = "728" dy="1.0em">X1-AD75-F49</tspan></text><g >
+
+            <rect x="58" y="324" width="178" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="147" y="322" class="a14"><tspan x = "147" dy="1.0em">IRON_ORE</tspan><tspan x = "147" dy="1.0em">X1-AD75-XD5A</tspan></text><g >
+
+            <rect x="359" y="520" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="441" y="518" class="a14"><tspan x = "441" dy="1.0em">COPPER</tspan><tspan x = "441" dy="1.0em">X1-AD75-H51</tspan></text><g >
+
+            <rect x="940" y="324" width="178" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="1029" y="322" class="a14"><tspan x = "1029" dy="1.0em">SHIP_PLATING</tspan><tspan x = "1029" dy="1.0em">X1-AD75-D44</tspan></text><g >
+
+            <rect x="1220" y="422" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="1302" y="420" class="a14"><tspan x = "1302" dy="1.0em">SHIP_PARTS</tspan><tspan x = "1302" dy="1.0em">X1-AD75-D43</tspan></text><g >
+
+            <rect x="646" y="128" width="164" height="38" fill="#ffffffff" 
+            stroke-width="1" stroke="#000000ff" rx="0"  />
+
+            </g>
+<text dominant-baseline="middle" text-anchor="middle" 
+            x="728" y="126" class="a14"><tspan x = "728" dy="1.0em">ALUMINUM</tspan><tspan x = "728" dy="1.0em">X1-AD75-H51</tspan></text><g >
+
+            <path id="arrow0" d="M 523 343 C 553 343, 616 343, 646 343 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow0" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow1" d="M 551 441 C 581 441, 616 441, 646 441 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow1" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow2" d="M 558 649.5448577680526 C 587.3331327833027 655.8351138134873, 617.1306371128369 666.2550576611854, 646 674.4134819262803 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow2" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow3" d="M 513.795918367347 558 C 539.5483753587855 573.3886633241523, 637.1633761255088 649.1701066406494, 661.290019132653 667 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow3" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow4" d="M 785.8027210884354 166 C 805.6766387647997 188.47281460327338, 956.2587834776617 397.83010874018356, 974.0300061842919 422 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow4" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow5" d="M 810 441 C 840 441, 917 441, 947 441 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow5" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow6" d="M 794.204081632653 166 C 818.1597832799147 184.0589135494742, 942.1060322270887 303.56808595694565, 964.072754525539 324 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow6" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow7" d="M 810 343 C 840 343, 910 343, 940 343 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow7" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow8" d="M 523 326.6666666666667 C 550.8698998516503 315.56402363633447, 621.9902847400149 277.37272406239094, 648.8448979591836 264 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow8" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow9" d="M 523 245 C 553 245, 616 245, 646 245 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow9" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow10" d="M 558 624.4551422319474 C 587.3331327833027 618.1648861865127, 589.402488253854 614.5005146168926, 618 605.4350680239748 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow10" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow11" d="M 523 547.1666666666666 C 552.4220113435164 553.0271486009443, 589.053377456141 565.1478638630606, 618 573.0277777777777 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow11" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow12" d="M 551 49 C 581 49, 616 49, 646 49 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow12" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow13" d="M 1111 441 C 1141 441, 1190 441, 1220 441 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow13" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow14" d="M 810 689.1760563380282 C 839.9103911895046 691.4930584724264, 1100.7304870720382 724.6738644256488, 1124 713.5 S 1237.9723146931588 486.80324267236676, 1251.4477064220184 460 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow14" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow15" d="M 810 49 C 840 49, 917 49, 947 49 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow15" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow16" d="M 810 678.2730769230769 C 839.4810183167696 672.7170388556857, 869.0289776000478 662.4013666092179, 898 654.6116386870458 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow16" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow17" d="M 838 598.9552845528456 C 867.4220113435164 604.8157664871233, 872.113935636161 609.2967584497403, 900.8237525376642 618 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow17" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow18" d="M 1111 49 C 1141 49, 1190 49, 1220 49 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow18" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow19" d="M 236 245 C 266 245, 329 245, 359 245 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow19" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow20" d="M 257 49 C 287 49, 301 49, 331 49 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow20" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow21" d="M 236 539 C 266 539, 329 539, 359 539 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow21" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow22" d="M 257 441 C 287 441, 301 441, 331 441 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow22" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow23" d="M 236 343 C 266 343, 329 343, 359 343 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow23" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow24" d="M 530 147 C 560 147, 616 147, 646 147 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow24" startOffset="50%" text-anchor="middle" class="a14"></textPath></text><g >
+
+            <path id="arrow25" d="M 264 637 C 294 637, 294 637, 324 637 " stroke="#000000ff" stroke-width="1"   marker-end="url(#endarrow)" 
+            fill="transparent" />
+
+            </g>
+<text><textPath href="#arrow25" startOffset="50%" text-anchor="middle" class="a14"></textPath></text></svg>
