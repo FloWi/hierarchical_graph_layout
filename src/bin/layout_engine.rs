@@ -82,11 +82,11 @@ fn generate_svg(graph: &mut VisualGraph) {
     let x_positions = x_positions_overview.keys().into_iter().sorted().collect_vec();
     let y_positions = y_positions_overview.keys().into_iter().sorted().collect_vec();
 
-    dbg!(&x_positions_overview);
-    dbg!(&y_positions_overview);
-
-    dbg!(x_positions);
-    dbg!(y_positions);
+    // dbg!(&x_positions_overview);
+    // dbg!(&y_positions_overview);
+    //
+    // dbg!(x_positions);
+    // dbg!(y_positions);
 
     let content = svg.finalize();
 
