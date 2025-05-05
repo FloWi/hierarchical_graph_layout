@@ -3,12 +3,14 @@ use rust_sugiyama::configure::{CrossingMinimization, RankingType};
 use rust_sugiyama::{configure::Config, from_graph};
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
-use strum::{Display, EnumIter};
+use rand::Rng;
+use strum::{Display, EnumIter, IntoEnumIterator};
 
 // Your existing types (assuming these are defined elsewhere)
 type TradeGoodSymbol = String;
 type WaypointSymbol = String;
 type TradeGoodType = String;
+
 
 #[derive(
     Serialize, Deserialize, Clone, Debug, Display, EnumIter, Eq, PartialEq, Hash, Ord, PartialOrd,
@@ -68,34 +70,45 @@ struct TechEdge {
     curve_factor: Option<f64>,
 }
 
-impl TechEdge {
+impl TechNode {
     pub(crate) fn supply_color(&self) -> String {
-        Self::get_supply_color(&self.supply)
+        get_supply_color(&self.supply)
     }
 
     pub(crate) fn activity_color(&self) -> String {
-        Self::get_activity_color(&self.activity)
+        get_activity_color(&self.activity)
+    }
+}
+
+fn get_activity_color(activity: &ActivityLevel) -> String {
+    match activity {
+        ActivityLevel::Strong => "#22c55e",     // green-500
+        ActivityLevel::Growing => "#86efac",    // green-300
+        ActivityLevel::Weak => "#eab308",       // yellow-500
+        ActivityLevel::Restricted => "#ef4444", // red-500
+    }
+        .to_string()
+}
+
+fn get_supply_color(supply: &SupplyLevel) -> String {
+    match supply {
+        SupplyLevel::Abundant => "#22c55e", // green-500
+        SupplyLevel::High => "#86efac",     // green-300
+        SupplyLevel::Moderate => "#fde047", // yellow-300
+        SupplyLevel::Limited => "#f97316",  // orange-500
+        SupplyLevel::Scarce => "#ef4444",   // red-500
+    }
+        .to_string()
+}
+
+
+impl TechEdge {
+    pub(crate) fn supply_color(&self) -> String {
+        get_supply_color(&self.supply)
     }
 
-    fn get_activity_color(activity: &ActivityLevel) -> String {
-        match activity {
-            ActivityLevel::Strong => "#22c55e",     // green-500
-            ActivityLevel::Growing => "#86efac",    // green-300
-            ActivityLevel::Weak => "#eab308",       // yellow-500
-            ActivityLevel::Restricted => "#ef4444", // red-500
-        }
-        .to_string()
-    }
-
-    fn get_supply_color(supply: &SupplyLevel) -> String {
-        match supply {
-            SupplyLevel::Abundant => "#22c55e", // green-500
-            SupplyLevel::High => "#86efac",     // green-300
-            SupplyLevel::Moderate => "#fde047", // yellow-300
-            SupplyLevel::Limited => "#f97316",  // orange-500
-            SupplyLevel::Scarce => "#ef4444",   // red-500
-        }
-        .to_string()
+    pub(crate) fn activity_color(&self) -> String {
+        get_activity_color(&self.activity)
     }
 }
 
@@ -380,27 +393,39 @@ fn create_full_supply_chain() -> (Vec<TechNode>, Vec<TechEdge>) {
     (nodes, edges)
 }
 
-// Helper function to create nodes with default values
+// Helper function to create nodes with random values
 fn create_node(id: &str, name: &str, waypoint: &str, node_type: &str) -> TechNode {
+    let mut rng = rand::thread_rng();
+
+    // Generate random supply level
+    let supplies: Vec<SupplyLevel> = SupplyLevel::iter().collect();
+    let random_supply = supplies[rng.random_range(0..supplies.len())].clone();
+
+    // Generate random activity level
+    let activities: Vec<ActivityLevel> = ActivityLevel::iter().collect();
+    let random_activity = activities[rng.random_range(0..activities.len())].clone();
+
+    // Random cost between 50 and 500
+    let random_cost = rng.random_range(50..=500);
+
+    // Random volume between 5 and 100
+    let random_volume = rng.random_range(5..=100);
+
     TechNode {
         id: id.to_string(),
         name: name.to_string(),
         waypoint_symbol: waypoint.to_string(),
         waypoint_type: node_type.to_string(),
-        supply: SupplyLevel::High,
-        activity: ActivityLevel::Restricted,
-        cost: 100,
-        volume: 10,
+        supply: random_supply,
+        activity: random_activity,
+        cost: random_cost,
+        volume: random_volume,
         width: 200.0,
         height: 150.0,
         x: None,
         y: None,
     }
 }
-
-use rand::Rng;
-use strum::IntoEnumIterator;
-// Assuming you have strum and strum_macros
 
 // Helper function to create edges with random activity and supply levels
 fn create_edge(source: &str, target: &str) -> TechEdge {
@@ -612,93 +637,186 @@ fn output_svg(nodes: &[TechNode], edges: &[TechEdge]) -> String {
         }
     }
 
-    // Draw nodes
+    // Draw nodes using the new node generator
     for node in nodes {
-        if let (Some(x), Some(y)) = (node.x, node.y) {
-            // Draw rectangle for the node
-            let node_x = x - node.width / 2.0;
-            let node_y = y - node.height / 2.0;
-
-            // Determine color based on node type
-            let color = match node.waypoint_type.as_str() {
-                "RAW_MATERIAL" => "#d4f0fc",
-                "REFINED" => "#b8e6f7",
-                "INDUSTRIAL" => "#8dd6f0",
-                "ADVANCED" => "#65c6ea",
-                "CONSUMER" => "#42b6e3",
-                _ => "#99ccff",
-            };
-
-            svg.push_str(&format!(
-                r#"<rect x="{}" y="{}" width="{}" height="{}" rx="5" ry="5" fill="{}" stroke="black" stroke-width="1" />"#,
-                node_x, node_y, node.width, node.height, color
-            ));
-
-            // Add node name
-            svg.push_str(&format!(
-                r#"<text x="{}" y="{}" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">{}</text>"#,
-                x, y, node.name
-            ));
-        }
+        svg.push_str(&generate_node_svg(node));
     }
 
     // Add edge labels after nodes to ensure they're in the foreground
+    // But only for target nodes as per your update
     for edge in edges {
         if let Some(ref points) = edge.points {
             if points.len() >= 2 {
-                // Calculate intersection points with node borders
-                // Get source and target nodes
-                let source_node = nodes.iter().find(|n| n.id == edge.source).unwrap();
+                // Get target node
                 let target_node = nodes.iter().find(|n| n.id == edge.target).unwrap();
 
-                if let (Some(sx), Some(sy), Some(tx), Some(ty)) =
-                    (source_node.x, source_node.y, target_node.x, target_node.y)
-                {
-                    // Calculate source node border intersection
-                    let (source_ix, source_iy) = calculate_node_border_intersection(
-                        sx,
-                        sy,
-                        source_node.width,
-                        source_node.height,
-                        points[0].0,
-                        points[0].1,
-                        points[1].0,
-                        points[1].1,
-                    );
-
+                if let (Some(tx), Some(ty)) = (target_node.x, target_node.y) {
+                    // For target label:
                     // Calculate target node border intersection
                     let (target_ix, target_iy) = calculate_node_border_intersection(
-                        tx,
-                        ty,
-                        target_node.width,
-                        target_node.height,
-                        points[points.len() - 1].0,
-                        points[points.len() - 1].1,
-                        points[points.len() - 2].0,
-                        points[points.len() - 2].1,
+                        tx, ty, target_node.width, target_node.height,
+                        points[points.len()-1].0, points[points.len()-1].1,
+                        points[points.len()-2].0, points[points.len()-2].1
                     );
 
-                    // Add labels at the intersection points
-                    //    svg.push_str(&generate_edge_label_svg(source_ix, source_iy, edge));
-                    svg.push_str(&generate_edge_label_svg(target_ix, target_iy, edge));
+                    // Calculate direction vector - pointing from node to edge (outward)
+                    let direction_x = points[points.len()-2].0 - tx;
+                    let direction_y = points[points.len()-2].1 - ty;
+
+                    // Add label with direction vector for proper positioning
+                    svg.push_str(&generate_edge_label_svg(target_ix, target_iy, edge, direction_x, direction_y));
                 }
             }
         }
     }
-
     // Close SVG
     svg.push_str("</g></svg>");
 
     svg
 }
+// Generate node SVG with styling based on node properties
+fn generate_node_svg(node: &TechNode) -> String {
+    if let (Some(x), Some(y)) = (node.x, node.y) {
+        // Colors
+        let background_color = "#000000";
+        let text_color = "#FFFFFF";
+        let bold_text_color = "#FFFFFF";
 
-// Generate a compact label based on TechEdge data
-fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge) -> String {
+        // Get activity color for border
+        let border_color = get_activity_color(&node.activity);
+
+        // Get color based on node type
+        let fill_color = "#0e3a4d";
+
+        // Layout parameters
+        let node_x = x - node.width / 2.0;
+        let node_y = y - node.height / 2.0;
+        let text_right_x = x + node.width / 2.0 - 10.0;  // 10px padding from right
+        let line_height = 20.0;
+
+        // Text styling
+        let font_family = "Arial";
+        let normal_font_size = 10;
+        let title_font_size = 14;
+        let border_width = 4;
+        let corner_radius = 5;
+
+        format!(
+            r#"<g>
+                <!-- Node background -->
+                <rect
+                    x="{node_x}"
+                    y="{node_y}"
+                    width="{}"
+                    height="{}"
+                    rx="{corner_radius}"
+                    ry="{corner_radius}"
+                    fill="{fill_color}"
+                    stroke="{border_color}"
+                    stroke-width="{border_width}"
+                />
+
+                <!-- Name (bold) -->
+                <text
+                    x="{text_right_x}"
+                    y="{}"
+                    font-family="{font_family}"
+                    font-size="{title_font_size}"
+                    font-weight="bold"
+                    text-anchor="end"
+                    fill="{bold_text_color}"
+                >{}</text>
+
+                <!-- Waypoint symbol -->
+                <text
+                    x="{text_right_x}"
+                    y="{}"
+                    font-family="{font_family}"
+                    font-size="{normal_font_size}"
+                    text-anchor="end"
+                    fill="{text_color}"
+                >{}</text>
+
+                <!-- Waypoint type -->
+                <text
+                    x="{text_right_x}"
+                    y="{}"
+                    font-family="{font_family}"
+                    font-size="{normal_font_size}"
+                    text-anchor="end"
+                    fill="{text_color}"
+                >{}</text>
+
+                <!-- Supply -->
+                <text
+                    x="{text_right_x}"
+                    y="{}"
+                    font-family="{font_family}"
+                    font-size="{normal_font_size}"
+                    text-anchor="end"
+                    fill="{}"
+                >{}</text>
+
+                <!-- Activity -->
+                <text
+                    x="{text_right_x}"
+                    y="{}"
+                    font-family="{font_family}"
+                    font-size="{normal_font_size}"
+                    text-anchor="end"
+                    fill="{}"
+                >{}</text>
+            </g>"#,
+            node.width,
+            node.height,
+            // Name (first row)
+            node_y + 30.0,
+            node.name,
+            // Waypoint symbol (second row)
+            node_y + 30.0 + line_height,
+            node.waypoint_symbol,
+            // Waypoint type (third row)
+            node_y + 30.0 + line_height * 2.0,
+            node.waypoint_type,
+            // Supply (fourth row)
+            node_y + 30.0 + line_height * 3.0,
+            node.supply_color(),
+            node.supply,
+            // Activity (fifth row)
+            node_y + 30.0 + line_height * 4.0,
+            node.activity_color(),
+            node.activity
+        )
+    } else {
+        // Return empty string if node has no position
+        String::new()
+    }
+}
+
+// Generate a compact label based on TechEdge data with positioning parameters
+fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, direction_y: f64) -> String {
     // Label parameters
-    let label_width = 80.0;
+    let label_width = 100.0;
     let label_height = 40.0;
-    let label_x = x - label_width / 2.0;
-    let label_y = y - label_height / 2.0;
+
+    // Calculate offset distance to move label along direction vector
+    // Normalize direction vector
+    let direction_length = (direction_x * direction_x + direction_y * direction_y).sqrt();
+    let norm_dir_x = direction_x / direction_length;
+    let norm_dir_y = direction_y / direction_length;
+
+    // Move label 20 pixels out from the intersection point along the direction vector
+    let offset_distance = 40.0;
+    let offset_x = norm_dir_x * offset_distance;
+    let offset_y = norm_dir_y * offset_distance;
+
+    // Apply offset to position
+    let center_x = x + offset_x;
+    let center_y = y + offset_y;
+
+    // Calculate label corner position
+    let label_x = center_x - label_width / 2.0;
+    let label_y = center_y - label_height / 2.0;
 
     // Row positioning
     let row_height = label_height / 2.0; // 2 rows
