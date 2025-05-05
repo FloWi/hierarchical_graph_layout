@@ -8,3 +8,5 @@ petgraph = "0.6.2"
 layout-rs = { version = "0.1.2", features = ["log"] }
 log = "0.4.27"
 itertools = "0.14.0"
+serde = { version = "1.0.219", features = ["derive"] }
+rust-sugiyama = { version = "0.3.0" }
