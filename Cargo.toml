@@ -10,3 +10,5 @@ log = "0.4.27"
 itertools = "0.14.0"
 serde = { version = "1.0.219", features = ["derive"] }
 rust-sugiyama = { version = "0.3.0" }
+strum = { version = "0.27", features = ["derive", "strum_macros"] }
+rand = "0.9.1"
