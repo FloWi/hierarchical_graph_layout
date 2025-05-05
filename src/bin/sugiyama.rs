@@ -68,6 +68,11 @@ struct TechEdge {
     // Add a curve factor for each edge
     #[serde(skip_serializing_if = "Option::is_none")]
     curve_factor: Option<f64>,
+    // New fields
+    #[serde(skip_serializing_if = "Option::is_none")]
+    distance: Option<u32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    profit: Option<i32>,  // Can be negative
 }
 
 impl TechNode {
@@ -122,7 +127,9 @@ fn main() {
 
     // Run the layout
     let orientation = Orientation::LeftRight;
-    let (layout_nodes, layout_edges) = build_supply_chain_layout(&nodes, &edges, orientation);
+    let x_scale = 1.5;
+    let y_scale = 0.75;
+    let (layout_nodes, layout_edges) = build_supply_chain_layout(&nodes, &edges, orientation, x_scale, y_scale);
 
     // Print the results
     println!("Node Layout:");
@@ -421,7 +428,7 @@ fn create_node(id: &str, name: &str, waypoint: &str, node_type: &str) -> TechNod
         cost: random_cost,
         volume: random_volume,
         width: 200.0,
-        height: 150.0,
+        height: 165.0,
         x: None,
         y: None,
     }
@@ -429,21 +436,29 @@ fn create_node(id: &str, name: &str, waypoint: &str, node_type: &str) -> TechNod
 
 // Helper function to create edges with random activity and supply levels
 fn create_edge(source: &str, target: &str) -> TechEdge {
-    let mut rng = rand::rng();
+    let mut rng = rand::thread_rng();
 
     // Generate random activity level
     let activities: Vec<ActivityLevel> = ActivityLevel::iter().collect();
-    let random_activity = activities[rng.random_range(0..activities.len())].clone();
+    let random_activity = activities[rng.gen_range(0..activities.len())].clone();
 
     // Generate random supply level
     let supplies: Vec<SupplyLevel> = SupplyLevel::iter().collect();
-    let random_supply = supplies[rng.random_range(0..supplies.len())].clone();
+    let random_supply = supplies[rng.gen_range(0..supplies.len())].clone();
 
     // Random cost between 10 and 200
-    let random_cost = rng.random_range(10..=200);
+    let random_cost = rng.gen_range(10..=200);
 
     // Random volume between 1 and 50
-    let random_volume = rng.random_range(1..=50);
+    let random_volume = rng.gen_range(1..=50);
+
+    // Random distance between 10 and 150
+    let random_distance = rng.gen_range(10..=150);
+
+    // Random profit between -50 and 250 (can be negative)
+    let random_profit = rng.gen_range(-50..=250);
+
+
 
     TechEdge {
         source: source.to_string(),
@@ -454,13 +469,18 @@ fn create_edge(source: &str, target: &str) -> TechEdge {
         supply: random_supply,
         points: None,
         curve_factor: None,
+        distance: Some(random_distance),
+        profit: Some(random_profit),
     }
 }
 
+// Function to build the supply chain layout with separate x and y scaling
 fn build_supply_chain_layout(
     nodes: &[TechNode],
     edges: &[TechEdge],
     orientation: Orientation,
+    x_scale: f64,  // Scaling factor for horizontal spacing
+    y_scale: f64,  // Scaling factor for vertical spacing
 ) -> (Vec<TechNode>, Vec<TechEdge>) {
     // Create a new directed graph
     let mut graph: StableDiGraph<String, u32> = StableDiGraph::new();
@@ -489,7 +509,7 @@ fn build_supply_chain_layout(
         minimum_length: 1, // Increase this from 0
         vertex_spacing: 300,
         dummy_vertices: true,                          // Enable dummy vertices
-        dummy_size: 150.0,                             // Give them a size
+        dummy_size: 150.0,                              // Give them a size
         ranking_type: RankingType::MinimizeEdgeLength, // Change from Original
         c_minimization: CrossingMinimization::Barycenter,
         transpose: true,
@@ -511,37 +531,27 @@ fn build_supply_chain_layout(
 
     let built_layouts = layouts.build();
 
-    println!("{} layouts found", built_layouts.len());
-    for (idx, (_, width, height)) in built_layouts.iter().enumerate() {
-        println!("layout #{}: width={}, height={}", idx, width, height);
-    }
-
     // Apply coordinates to nodes
     if let Some((layout, width, height)) = built_layouts.first() {
-        println!("Using layout #0: width={}, height={}", width, height);
-
         for (node_idx, (x, y)) in layout.iter() {
             let node_id = &graph[NodeIndex::from(*node_idx)];
             if let Some(&pos) = node_positions.get(node_id) {
                 match orientation {
                     Orientation::LeftRight => {
                         // Update node coordinates and rotate 90 degrees (swap and invert as needed)
-
-                        // Transform coordinates for left-to-right layout:
-                        // - Use -y as the new x (horizontally)
-                        // - Use x as the new y (vertically, flipped)
-                        updated_nodes[pos].x = Some(-*y as f64);
-                        updated_nodes[pos].y = Some(*x as f64);
+                        // Also apply scaling factors
+                        updated_nodes[pos].x = Some(-*y as f64 * x_scale);
+                        updated_nodes[pos].y = Some(*x as f64 * y_scale);
                     }
                     Orientation::TopDown => {
-                        updated_nodes[pos].x = Some(*x as f64);
-                        updated_nodes[pos].y = Some(*y as f64);
+                        updated_nodes[pos].x = Some(*x as f64 * x_scale);
+                        updated_nodes[pos].y = Some(*y as f64 * y_scale);
                     }
                 }
             }
         }
 
-        // Process edge routing
+        // Process edge routing with scaling
         for edge in &mut updated_edges {
             if let (Some(source_pos), Some(target_pos)) = (
                 node_positions.get(&edge.source),
@@ -683,10 +693,22 @@ fn generate_node_svg(node: &TechNode) -> String {
         let bold_text_color = "#FFFFFF";
 
         // Get activity color for border
-        let border_color = get_activity_color(&node.activity);
+        let border_color = match &node.activity {
+            ActivityLevel::Strong => "#22c55e",    // green-500
+            ActivityLevel::Growing => "#86efac",   // green-300
+            ActivityLevel::Weak => "#eab308",      // yellow-500
+            ActivityLevel::Restricted => "#ef4444", // red-500
+        };
 
         // Get color based on node type
-        let fill_color = "#0e3a4d";
+        let fill_color = match node.waypoint_type.as_str() {
+            "RAW_MATERIAL" => "#091c26",
+            "REFINED" => "#0a2533",
+            "INDUSTRIAL" => "#0c3040",
+            "ADVANCED" => "#0e3a4d",
+            "CONSUMER" => "#10425a",
+            _ => "#000000",
+        };
 
         // Layout parameters
         let node_x = x - node.width / 2.0;
@@ -698,7 +720,7 @@ fn generate_node_svg(node: &TechNode) -> String {
         let font_family = "Arial";
         let normal_font_size = 10;
         let title_font_size = 14;
-        let border_width = 4;
+        let border_width = 2;
         let corner_radius = 5;
 
         format!(
@@ -766,6 +788,26 @@ fn generate_node_svg(node: &TechNode) -> String {
                     text-anchor="end"
                     fill="{}"
                 >{}</text>
+
+                <!-- Volume -->
+                <text
+                    x="{text_right_x}"
+                    y="{}"
+                    font-family="{font_family}"
+                    font-size="{normal_font_size}"
+                    text-anchor="end"
+                    fill="{text_color}"
+                >v: {}</text>
+
+                <!-- Costs -->
+                <text
+                    x="{text_right_x}"
+                    y="{}"
+                    font-family="{font_family}"
+                    font-size="{normal_font_size}"
+                    text-anchor="end"
+                    fill="{text_color}"
+                >p: {}c</text>
             </g>"#,
             node.width,
             node.height,
@@ -785,28 +827,39 @@ fn generate_node_svg(node: &TechNode) -> String {
             // Activity (fifth row)
             node_y + 30.0 + line_height * 4.0,
             node.activity_color(),
-            node.activity
+            node.activity,
+            // Volume (sixth row)
+            node_y + 30.0 + line_height * 5.0,
+            node.volume,
+            // Costs (seventh row)
+            node_y + 30.0 + line_height * 6.0,
+            node.cost
         )
     } else {
         // Return empty string if node has no position
         String::new()
     }
 }
-
 // Generate a compact label based on TechEdge data with positioning parameters
 fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, direction_y: f64) -> String {
     // Label parameters
     let label_width = 100.0;
-    let label_height = 40.0;
+    let label_height = 55.0;  // Increased height for 3 rows
 
     // Calculate offset distance to move label along direction vector
     // Normalize direction vector
     let direction_length = (direction_x * direction_x + direction_y * direction_y).sqrt();
+
+    // Prevent division by zero
+    if direction_length < 0.001 {
+        return String::new(); // Return empty string if direction vector is too small
+    }
+
     let norm_dir_x = direction_x / direction_length;
     let norm_dir_y = direction_y / direction_length;
 
-    // Move label 20 pixels out from the intersection point along the direction vector
-    let offset_distance = 40.0;
+    // Move label out from the intersection point along the direction vector
+    let offset_distance = 30.0;
     let offset_x = norm_dir_x * offset_distance;
     let offset_y = norm_dir_y * offset_distance;
 
@@ -818,14 +871,15 @@ fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, di
     let label_x = center_x - label_width / 2.0;
     let label_y = center_y - label_height / 2.0;
 
-    // Row positioning
-    let row_height = label_height / 2.0; // 2 rows
+    // Row positioning (4 rows now)
+    let row_height = label_height / 3.0;
 
     // Text positions
     let left_text_x = label_x + 5.0;
     let right_text_x = label_x + label_width - 5.0;
-    let top_row_y = label_y + row_height * 0.5;
-    let bottom_row_y = label_y + row_height * 1.5;
+    let row1_y = label_y + row_height * 0.5;
+    let row2_y = label_y + row_height * 1.5;
+    let row3_y = label_y + row_height * 2.5;
 
     // Text styling
     let font_size = 10;
@@ -846,9 +900,16 @@ fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, di
     let activity = &edge.activity;
     let supply = &edge.supply;
 
+    // New fields
+    let distance = edge.distance.unwrap_or(0);
+    let profit = edge.profit.unwrap_or(0);
+
     // Colors for activity and supply
     let activity_color = edge.activity_color();
     let supply_color = edge.supply_color();
+
+    // Profit color (green for positive, red for negative)
+    let profit_color = if profit >= 0 { "#22c55e" } else { "#ef4444" };
 
     format!(
         r#"<g>
@@ -866,19 +927,19 @@ fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, di
                 stroke-width="{border_width}"
             />
 
-            <!-- Row 1: Cost and Activity -->
+            <!-- Row 1: Distance and Activity -->
             <text
                 x="{left_text_x}"
-                y="{top_row_y}"
+                y="{row1_y}"
                 font-family="{font_family}"
                 font-size="{font_size}"
                 text-anchor="start"
                 dominant-baseline="middle"
                 fill="{normal_text_color}"
-            >{cost}c</text>
+            >d: {distance}</text>
             <text
                 x="{right_text_x}"
-                y="{top_row_y}"
+                y="{row1_y}"
                 font-family="{font_family}"
                 font-size="{font_size}"
                 text-anchor="end"
@@ -889,22 +950,42 @@ fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, di
             <!-- Row 2: Volume and Supply -->
             <text
                 x="{left_text_x}"
-                y="{bottom_row_y}"
+                y="{row2_y}"
                 font-family="{font_family}"
                 font-size="{font_size}"
                 text-anchor="start"
                 dominant-baseline="middle"
                 fill="{normal_text_color}"
-            >vol: {volume}</text>
+            >v: {volume}</text>
             <text
                 x="{right_text_x}"
-                y="{bottom_row_y}"
+                y="{row2_y}"
                 font-family="{font_family}"
                 font-size="{font_size}"
                 text-anchor="end"
                 dominant-baseline="middle"
                 fill="{supply_color}"
             >{supply}</text>
+
+            <!-- Row 3: Price and Profit -->
+            <text
+                x="{left_text_x}"
+                y="{row3_y}"
+                font-family="{font_family}"
+                font-size="{font_size}"
+                text-anchor="start"
+                dominant-baseline="middle"
+                fill="{normal_text_color}"
+            >p: {cost}c</text>
+            <text
+                x="{right_text_x}"
+                y="{row3_y}"
+                font-family="{font_family}"
+                font-size="{font_size}"
+                text-anchor="end"
+                dominant-baseline="middle"
+                fill="{profit_color}"
+            >prof.: {profit}</text>
         </g>"#
     )
 }
