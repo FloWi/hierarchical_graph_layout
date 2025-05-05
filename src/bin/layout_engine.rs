@@ -65,7 +65,7 @@ fn generate_svg(graph: &mut VisualGraph) {
             match &element.shape {
                 ShapeKind::None => {}
                 ShapeKind::Box(content) => {
-                    println!("rank(row: {}, col: {}); (y: {}, x: {}); node: {}", row_id, col_id, pos.middle().y, pos.middle().x, content.replace("\n", " - "));
+                    println!("rank(rank idx: {}, inner_rank_idx: {}); (y: {}, x: {}); node: {}", row_id, col_id, pos.middle().y, pos.middle().x, content.replace("\n", " - "));
                 }
                 ShapeKind::Circle(_) => {}
                 ShapeKind::DoubleCircle(_) => {}
