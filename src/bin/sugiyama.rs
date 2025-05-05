@@ -1,8 +1,10 @@
+use std::borrow::Cow;
 use petgraph::stable_graph::{NodeIndex, StableDiGraph};
 use rust_sugiyama::configure::{CrossingMinimization, RankingType};
 use rust_sugiyama::{configure::Config, from_graph};
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
+use std::fmt;
 use rand::Rng;
 use strum::{Display, EnumIter, IntoEnumIterator};
 
@@ -75,27 +77,60 @@ struct TechEdge {
     profit: Option<i32>,  // Can be negative
 }
 
+// ColorString newtype using Cow for efficiency
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+pub struct ColorString(pub Cow<'static, str>);
+
+impl ColorString {
+    pub fn new(color: &str) -> Self {
+        Self(Cow::Owned(color.to_string()))
+    }
+
+    pub fn as_str(&self) -> &str {
+        &self.0
+    }
+}
+
+impl From<String> for ColorString {
+    fn from(value: String) -> Self {
+        Self(Cow::Owned(value))
+    }
+}
+
+impl From<&'static str> for ColorString {
+    fn from(value: &'static str) -> Self {
+        Self(Cow::Borrowed(value))
+    }
+}
+
+// Display implementation for easy formatting
+impl fmt::Display for ColorString {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "{}", self.0)
+    }
+}
+
 impl TechNode {
-    pub(crate) fn supply_color(&self) -> String {
+    pub(crate) fn supply_color(&self) -> ColorString {
         get_supply_color(&self.supply)
     }
 
-    pub(crate) fn activity_color(&self) -> String {
+    pub(crate) fn activity_color(&self) -> ColorString {
         get_activity_color(&self.activity)
     }
 }
 
-fn get_activity_color(activity: &ActivityLevel) -> String {
+fn get_activity_color(activity: &ActivityLevel) -> ColorString {
     match activity {
         ActivityLevel::Strong => "#22c55e",     // green-500
         ActivityLevel::Growing => "#86efac",    // green-300
         ActivityLevel::Weak => "#eab308",       // yellow-500
         ActivityLevel::Restricted => "#ef4444", // red-500
     }
-        .to_string()
+        .to_string().into()
 }
 
-fn get_supply_color(supply: &SupplyLevel) -> String {
+fn get_supply_color(supply: &SupplyLevel) -> ColorString {
     match supply {
         SupplyLevel::Abundant => "#22c55e", // green-500
         SupplyLevel::High => "#86efac",     // green-300
@@ -103,16 +138,16 @@ fn get_supply_color(supply: &SupplyLevel) -> String {
         SupplyLevel::Limited => "#f97316",  // orange-500
         SupplyLevel::Scarce => "#ef4444",   // red-500
     }
-        .to_string()
+        .to_string().into()
 }
 
 
 impl TechEdge {
-    pub(crate) fn supply_color(&self) -> String {
+    pub(crate) fn supply_color(&self) -> ColorString {
         get_supply_color(&self.supply)
     }
 
-    pub(crate) fn activity_color(&self) -> String {
+    pub(crate) fn activity_color(&self) -> ColorString {
         get_activity_color(&self.activity)
     }
 }
@@ -684,21 +719,63 @@ fn output_svg(nodes: &[TechNode], edges: &[TechEdge]) -> String {
 
     svg
 }
-// Generate node SVG with styling based on node properties
+
+// A utility function to generate SVG multiline text with varying colors
+// Now with support for a font size multiplier for the first line
+fn generate_multiline_text_svg(
+    x: f64,                              // X position (anchor point)
+    y: f64,                              // Y position (top of first line)
+    lines: &[(String, ColorString)],     // Text content and colors
+    text_anchor: &str,                   // "start", "middle", or "end"
+    font_family: &str,                   // Font family
+    font_size: u32,                      // Base font size
+    line_height: f64,                    // Space between lines
+    dominant_baseline: Option<&str>,     // Optional baseline alignment
+    first_line_size_multiplier: Option<f64>, // Optional font size multiplier for the first line
+) -> String {
+    let baseline_attr = if let Some(baseline) = dominant_baseline {
+        format!(" dominant-baseline=\"{}\"", baseline)
+    } else {
+        String::new()
+    };
+
+    let mut svg = format!(
+        r#"<text x="{}" y="{}" font-family="{}" font-size="{}"{} text-anchor="{}">"#,
+        x, y, font_family, font_size, baseline_attr, text_anchor
+    );
+
+    for (i, (text, color)) in lines.iter().enumerate() {
+        let dy = if i == 0 { "0".to_string() } else { format!("{}", line_height) };
+
+        // Apply font size multiplier to first line if specified
+        let font_size_attr = if i == 0 && first_line_size_multiplier.is_some() {
+            let multiplier = first_line_size_multiplier.unwrap();
+            let adjusted_size = (font_size as f64 * multiplier).round() as u32;
+            format!(" font-size=\"{}\"", adjusted_size)
+        } else {
+            String::new()
+        };
+
+        svg.push_str(&format!(
+            r#"<tspan x="{}" dy="{}"{} fill="{}">{}</tspan>"#,
+            x, dy, font_size_attr, color.0, text
+        ));
+    }
+
+    svg.push_str("</text>");
+    svg
+}
+
+// Refactored node SVG generator with increased padding and first line font size multiplier
 fn generate_node_svg(node: &TechNode) -> String {
     if let (Some(x), Some(y)) = (node.x, node.y) {
         // Colors
-        let background_color = "#000000";
         let text_color = "#FFFFFF";
-        let bold_text_color = "#FFFFFF";
+        let bold_text_color = ColorString::from("#FFFFFF");
+        let normal_text_color = ColorString::from("#CCCCCC");
 
         // Get activity color for border
-        let border_color = match &node.activity {
-            ActivityLevel::Strong => "#22c55e",    // green-500
-            ActivityLevel::Growing => "#86efac",   // green-300
-            ActivityLevel::Weak => "#eab308",      // yellow-500
-            ActivityLevel::Restricted => "#ef4444", // red-500
-        };
+        let border_color = node.activity_color().0;
 
         // Get color based on node type
         let fill_color = match node.waypoint_type.as_str() {
@@ -713,15 +790,33 @@ fn generate_node_svg(node: &TechNode) -> String {
         // Layout parameters
         let node_x = x - node.width / 2.0;
         let node_y = y - node.height / 2.0;
-        let text_right_x = x + node.width / 2.0 - 10.0;  // 10px padding from right
+        let text_right_x = x + node.width / 2.0 - 16.0;  // Increased padding from 10px to 16px
         let line_height = 20.0;
 
         // Text styling
         let font_family = "Arial";
         let normal_font_size = 10;
-        let title_font_size = 14;
+        let title_font_size_multiplier = 1.3;  // Make first line 30% larger
         let border_width = 2;
         let corner_radius = 5;
+
+        // Prepare text lines with their colors
+        let text_lines = vec![
+            // Name (bold, title font)
+            (node.name.clone(), bold_text_color.clone()),
+            // Waypoint symbol
+            (node.waypoint_symbol.clone(), normal_text_color.clone()),
+            // Waypoint type
+            (node.waypoint_type.clone(), normal_text_color.clone()),
+            // Supply
+            (node.supply.to_string(), node.supply_color()),
+            // Activity
+            (node.activity.to_string(), node.activity_color()),
+            // Volume
+            (format!("v: {}", node.volume), normal_text_color.clone()),
+            // Costs
+            (format!("p: {}c", node.cost), normal_text_color.clone()),
+        ];
 
         format!(
             r#"<g>
@@ -738,113 +833,35 @@ fn generate_node_svg(node: &TechNode) -> String {
                     stroke-width="{border_width}"
                 />
 
-                <!-- Name (bold) -->
-                <text
-                    x="{text_right_x}"
-                    y="{}"
-                    font-family="{font_family}"
-                    font-size="{title_font_size}"
-                    font-weight="bold"
-                    text-anchor="end"
-                    fill="{bold_text_color}"
-                >{}</text>
-
-                <!-- Waypoint symbol -->
-                <text
-                    x="{text_right_x}"
-                    y="{}"
-                    font-family="{font_family}"
-                    font-size="{normal_font_size}"
-                    text-anchor="end"
-                    fill="{text_color}"
-                >{}</text>
-
-                <!-- Waypoint type -->
-                <text
-                    x="{text_right_x}"
-                    y="{}"
-                    font-family="{font_family}"
-                    font-size="{normal_font_size}"
-                    text-anchor="end"
-                    fill="{text_color}"
-                >{}</text>
-
-                <!-- Supply -->
-                <text
-                    x="{text_right_x}"
-                    y="{}"
-                    font-family="{font_family}"
-                    font-size="{normal_font_size}"
-                    text-anchor="end"
-                    fill="{}"
-                >{}</text>
-
-                <!-- Activity -->
-                <text
-                    x="{text_right_x}"
-                    y="{}"
-                    font-family="{font_family}"
-                    font-size="{normal_font_size}"
-                    text-anchor="end"
-                    fill="{}"
-                >{}</text>
-
-                <!-- Volume -->
-                <text
-                    x="{text_right_x}"
-                    y="{}"
-                    font-family="{font_family}"
-                    font-size="{normal_font_size}"
-                    text-anchor="end"
-                    fill="{text_color}"
-                >v: {}</text>
-
-                <!-- Costs -->
-                <text
-                    x="{text_right_x}"
-                    y="{}"
-                    font-family="{font_family}"
-                    font-size="{normal_font_size}"
-                    text-anchor="end"
-                    fill="{text_color}"
-                >p: {}c</text>
+                <!-- Node text content (using multiline text) -->
+                {}
             </g>"#,
             node.width,
             node.height,
-            // Name (first row)
-            node_y + 30.0,
-            node.name,
-            // Waypoint symbol (second row)
-            node_y + 30.0 + line_height,
-            node.waypoint_symbol,
-            // Waypoint type (third row)
-            node_y + 30.0 + line_height * 2.0,
-            node.waypoint_type,
-            // Supply (fourth row)
-            node_y + 30.0 + line_height * 3.0,
-            node.supply_color(),
-            node.supply,
-            // Activity (fifth row)
-            node_y + 30.0 + line_height * 4.0,
-            node.activity_color(),
-            node.activity,
-            // Volume (sixth row)
-            node_y + 30.0 + line_height * 5.0,
-            node.volume,
-            // Costs (seventh row)
-            node_y + 30.0 + line_height * 6.0,
-            node.cost
+            generate_multiline_text_svg(
+                text_right_x,              // x position (right-aligned with increased padding)
+                node_y + 30.0,             // y position (starting from top with padding)
+                &text_lines,               // text content and colors
+                "end",                     // right-aligned text
+                font_family,               // font family
+                normal_font_size,          // font size
+                line_height,               // line spacing
+                None,                      // no special baseline alignment
+                Some(title_font_size_multiplier), // Increase size of first line
+            )
         )
     } else {
         // Return empty string if node has no position
         String::new()
     }
 }
-// Generate a compact label based on TechEdge data with positioning parameters
+
+// Refactored edge label SVG generator with increased padding
 fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, direction_y: f64) -> String {
     // Label parameters
     let label_width = 100.0;
-    let label_height = 55.0;  // Increased height for 3 rows
+    let label_height = 60.0;  // Increased height from 55.0 to 60.0 for more padding
+    let padding = 8.0;        // Increased padding from 5.0 to 8.0
 
     // Calculate offset distance to move label along direction vector
     // Normalize direction vector
@@ -871,19 +888,11 @@ fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, di
     let label_x = center_x - label_width / 2.0;
     let label_y = center_y - label_height / 2.0;
 
-    // Row positioning (4 rows now)
-    let row_height = label_height / 3.0;
-
-    // Text positions
-    let left_text_x = label_x + 5.0;
-    let right_text_x = label_x + label_width - 5.0;
-    let row1_y = label_y + row_height * 0.5;
-    let row2_y = label_y + row_height * 1.5;
-    let row3_y = label_y + row_height * 2.5;
-
     // Text styling
     let font_size = 10;
     let font_family = "Arial";
+    let normal_text_color = ColorString::from("#eee");
+    let line_height = 18.0;
 
     // Background styling
     let background_fill = "#666";
@@ -891,8 +900,6 @@ fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, di
     let border_color = "gray";
     let border_width = 1;
     let corner_radius = 4;
-
-    let normal_text_color = "#eee";
 
     // Content from edge
     let cost = edge.cost;
@@ -911,6 +918,26 @@ fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, di
     // Profit color (green for positive, red for negative)
     let profit_color = if profit >= 0 { "#22c55e" } else { "#ef4444" };
 
+    // Prepare left and right text content
+    let left_text_lines = vec![
+        (format!("d: {}", distance), normal_text_color.clone()),
+        (format!("v: {}", volume), normal_text_color.clone()),
+        (format!("p: {}c", cost), normal_text_color.clone()),
+    ];
+
+    let right_text_lines = vec![
+        (activity.to_string(), activity_color),
+        (supply.to_string(), supply_color),
+        (format!("prof.: {}", profit), ColorString::from(profit_color)),
+    ];
+
+    // Calculate vertical center position with adjustment for 3 lines of text
+    // For perfect vertical centering, we position the middle line at the center
+    // and adjust the first line position accordingly
+    let total_text_height = line_height * 2.0; // Height of 3 lines (with 2 line-height spaces)
+    let vertical_center = label_y + label_height / 2.0;
+    let row1_y = vertical_center - total_text_height / 2.0;
+
     format!(
         r#"<g>
             <!-- Label background -->
@@ -927,68 +954,37 @@ fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, di
                 stroke-width="{border_width}"
             />
 
-            <!-- Row 1: Distance and Activity -->
-            <text
-                x="{left_text_x}"
-                y="{row1_y}"
-                font-family="{font_family}"
-                font-size="{font_size}"
-                text-anchor="start"
-                dominant-baseline="middle"
-                fill="{normal_text_color}"
-            >d: {distance}</text>
-            <text
-                x="{right_text_x}"
-                y="{row1_y}"
-                font-family="{font_family}"
-                font-size="{font_size}"
-                text-anchor="end"
-                dominant-baseline="middle"
-                fill="{activity_color}"
-            >{activity}</text>
+            <!-- Left-aligned text (using multiline text) -->
+            {}
 
-            <!-- Row 2: Volume and Supply -->
-            <text
-                x="{left_text_x}"
-                y="{row2_y}"
-                font-family="{font_family}"
-                font-size="{font_size}"
-                text-anchor="start"
-                dominant-baseline="middle"
-                fill="{normal_text_color}"
-            >v: {volume}</text>
-            <text
-                x="{right_text_x}"
-                y="{row2_y}"
-                font-family="{font_family}"
-                font-size="{font_size}"
-                text-anchor="end"
-                dominant-baseline="middle"
-                fill="{supply_color}"
-            >{supply}</text>
-
-            <!-- Row 3: Price and Profit -->
-            <text
-                x="{left_text_x}"
-                y="{row3_y}"
-                font-family="{font_family}"
-                font-size="{font_size}"
-                text-anchor="start"
-                dominant-baseline="middle"
-                fill="{normal_text_color}"
-            >p: {cost}c</text>
-            <text
-                x="{right_text_x}"
-                y="{row3_y}"
-                font-family="{font_family}"
-                font-size="{font_size}"
-                text-anchor="end"
-                dominant-baseline="middle"
-                fill="{profit_color}"
-            >prof.: {profit}</text>
-        </g>"#
+            <!-- Right-aligned text (using multiline text) -->
+            {}
+        </g>"#,
+        generate_multiline_text_svg(
+            label_x + padding,      // x position (left side with increased padding)
+            row1_y,                 // y position (starting from top, adjusted for padding)
+            &left_text_lines,       // text content and colors
+            "start",                // left-aligned text
+            font_family,            // font family
+            font_size,              // font size
+            line_height,            // line spacing
+            Some("middle"),         // middle baseline alignment
+            None,                   // no font size multiplier for first line
+        ),
+        generate_multiline_text_svg(
+            label_x + label_width - padding,  // x position (right side with increased padding)
+            row1_y,                           // y position (starting from top, adjusted for padding)
+            &right_text_lines,                // text content and colors
+            "end",                            // right-aligned text
+            font_family,                      // font family
+            font_size,                        // font size
+            line_height,                      // line spacing
+            Some("middle"),                   // middle baseline alignment
+            None,                             // no font size multiplier for first line
+        )
     )
 }
+
 
 // Helper function to calculate the intersection of a line with a node's rectangle border
 fn calculate_node_border_intersection(
