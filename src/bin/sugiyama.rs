@@ -337,8 +337,8 @@ fn create_node(id: &str, name: &str, waypoint: &str, node_type: &str) -> TechNod
         activity: "MODERATE".to_string(),
         cost: 100,
         volume: 10,
-        width: 120.0,
-        height: 70.0,
+        width: 200.0,
+        height: 150.0,
         x: None,
         y: None,
     }
@@ -388,7 +388,7 @@ fn build_supply_chain_layout(
     // Configure the layout algorithm
     let config = Config {
         minimum_length: 1, // Increase this from 0
-        vertex_spacing: 150,
+        vertex_spacing: 300,
         dummy_vertices: true,                          // Enable dummy vertices
         dummy_size: 150.0,                              // Give them a size
         ranking_type: RankingType::MinimizeEdgeLength, // Change from Original
