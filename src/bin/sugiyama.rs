@@ -45,11 +45,17 @@ struct TechEdge {
     curve_factor: Option<f64>,
 }
 
+enum Orientation {
+    TopDown,
+    LeftRight,
+}
+
 fn main() {
     let (nodes, edges) = create_full_supply_chain();
 
     // Run the layout
-    let (layout_nodes, layout_edges) = build_supply_chain_layout(&nodes, &edges);
+    let orientation = Orientation::LeftRight;
+    let (layout_nodes, layout_edges) = build_supply_chain_layout(&nodes, &edges, orientation);
 
     // Print the results
     println!("Node Layout:");
@@ -72,11 +78,9 @@ fn main() {
     use std::io::Write;
 
     match File::create("sugiyama.svg") {
-        Ok(mut file) => {
-            match file.write_all(svg.as_bytes()) {
-                Ok(_) => println!("SVG successfully written to sugiyama.svg"),
-                Err(e) => println!("Error writing to file: {}", e),
-            }
+        Ok(mut file) => match file.write_all(svg.as_bytes()) {
+            Ok(_) => println!("SVG successfully written to sugiyama.svg"),
+            Err(e) => println!("Error writing to file: {}", e),
         },
         Err(e) => println!("Error creating file: {}", e),
     }
@@ -354,10 +358,10 @@ fn create_edge(source: &str, target: &str) -> TechEdge {
     }
 }
 
-// Function to build and layout the graph
 fn build_supply_chain_layout(
     nodes: &[TechNode],
     edges: &[TechEdge],
+    orientation: Orientation,
 ) -> (Vec<TechNode>, Vec<TechEdge>) {
     // Create a new directed graph
     let mut graph: StableDiGraph<String, u32> = StableDiGraph::new();
@@ -382,14 +386,14 @@ fn build_supply_chain_layout(
     }
 
     // Configure the layout algorithm
-    let config =  Config {
-        minimum_length: 1,                        // Increase this from 0
+    let config = Config {
+        minimum_length: 1, // Increase this from 0
         vertex_spacing: 150,
-        dummy_vertices: true,                     // Enable dummy vertices
-        dummy_size: 50.0,                         // Give them a size
+        dummy_vertices: true,                          // Enable dummy vertices
+        dummy_size: 150.0,                              // Give them a size
         ranking_type: RankingType::MinimizeEdgeLength, // Change from Original
-        c_minimization: CrossingMinimization::Median,
-        transpose: false,
+        c_minimization: CrossingMinimization::Barycenter,
+        transpose: true,
         // ..Default::default()
     };
 
@@ -408,35 +412,33 @@ fn build_supply_chain_layout(
 
     let built_layouts = layouts.build();
 
-    // After building layouts, iterate through all and pick the best one
-    let mut best_layout_index = 0;
-    let mut best_layout_metric = 0.0; // Or some other appropriate initial value
-
-    for (i, (layout, width, height)) in built_layouts.iter().enumerate() {
-        // Define some metric to evaluate layout quality
-        // For example, you might prefer layouts with more balanced width/height ratio
-        let layout_metric = (*width as f64) / (*height as f64);
-
-        // Compare with current best
-        if layout_metric > 1.0 && layout_metric < best_layout_metric || best_layout_metric == 0.0 {
-            best_layout_index = i;
-            best_layout_metric = layout_metric;
-        }
+    println!("{} layouts found", built_layouts.len());
+    for (idx, (_, width, height)) in built_layouts.iter().enumerate() {
+        println!("layout #{}: width={}, height={}", idx, width, height);
     }
 
-    println!("{} layouts found", built_layouts.len());
     // Apply coordinates to nodes
+    if let Some((layout, width, height)) = built_layouts.first() {
+        println!("Using layout #0: width={}, height={}", width, height);
 
-    if let Some((layout, width, height)) = built_layouts.get(best_layout_index) {
-
-        println!("Using layout #{}: width={}, height={}", best_layout_index, width, height);
-
-        // Update node coordinates
         for (node_idx, (x, y)) in layout.iter() {
             let node_id = &graph[NodeIndex::from(*node_idx)];
             if let Some(&pos) = node_positions.get(node_id) {
-                updated_nodes[pos].x = Some(*x as f64);
-                updated_nodes[pos].y = Some(*y as f64);
+                match orientation {
+                    Orientation::LeftRight => {
+                        // Update node coordinates and rotate 90 degrees (swap and invert as needed)
+
+                        // Transform coordinates for left-to-right layout:
+                        // - Use -y as the new x (horizontally)
+                        // - Use x as the new y (vertically, flipped)
+                        updated_nodes[pos].x = Some(-*y as f64);
+                        updated_nodes[pos].y = Some(*x as f64);
+                    }
+                    Orientation::TopDown => {
+                        updated_nodes[pos].x = Some(*x as f64);
+                        updated_nodes[pos].y = Some(*y as f64);
+                    }
+                }
             }
         }
 
@@ -452,11 +454,7 @@ fn build_supply_chain_layout(
                 if let (Some(sx), Some(sy), Some(tx), Some(ty)) =
                     (source_node.x, source_node.y, target_node.x, target_node.y)
                 {
-                    // For a straight line, we'd just use:
-                    // edge.points = Some(vec![(sx, sy), (tx, ty)]);
-
-                    // For curved edges (more visually appealing):
-                    // Add a control point for the path
+                    // For curved edges with control points
                     let mid_x = (sx + tx) / 2.0;
                     let mid_y = (sy + ty) / 2.0;
 
@@ -496,7 +494,7 @@ fn output_svg(nodes: &[TechNode], edges: &[TechEdge]) -> String {
     }
 
     let svg_width = max_x - min_x + 2.0 * margin;
-    let svg_height = (max_y - min_y).abs() + 2.0 * margin;
+    let svg_height = max_y - min_y + 2.0 * margin;
 
     // SVG header
     let mut svg = format!(
@@ -504,15 +502,11 @@ fn output_svg(nodes: &[TechNode], edges: &[TechEdge]) -> String {
         svg_width, svg_height
     );
 
-    // Add a transformation that:
-    // 1. Translates to account for margins and any negative coordinates
-    // 2. Scales the y-axis by -1 to flip it (since Sugiyama outputs negative y values for top-to-bottom layout)
-    // 3. Translates again to move everything back into the visible area after flipping
+    // Transform to adjust for margins and any negative coordinates
     svg.push_str(&format!(
-        r#"<g transform="translate({},{}) scale(1,-1) translate(0,{})">"#,
+        r#"<g transform="translate({},{})">"#,
         margin - min_x,
-        margin - min_y,
-        -max_y - min_y  // This value adjusts the vertical position after flipping
+        margin - min_y
     ));
 
     // Draw edges
@@ -566,10 +560,10 @@ fn output_svg(nodes: &[TechNode], edges: &[TechEdge]) -> String {
                 node_x, node_y, node.width, node.height, color
             ));
 
-            // Add node name - need to flip the text back to be readable
+            // Add node name
             svg.push_str(&format!(
-                r#"<text transform="scale(1,-1)" x="{}" y="{}" font-family="Arial" font-size="12" text-anchor="middle">{}</text>"#,
-                x, -y, node.name
+                r#"<text x="{}" y="{}" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">{}</text>"#,
+                x, y, node.name
             ));
         }
     }
