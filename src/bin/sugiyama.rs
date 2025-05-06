@@ -797,7 +797,7 @@ fn generate_node_svg(node: &TechNode) -> String {
         let font_family = "Arial";
         let normal_font_size = 10;
         let title_font_size_multiplier = 1.3;  // Make first line 30% larger
-        let border_width = 2;
+        let border_width = 4;
         let corner_radius = 5;
 
         // Prepare text lines with their colors
@@ -808,10 +808,10 @@ fn generate_node_svg(node: &TechNode) -> String {
             (node.waypoint_symbol.clone(), normal_text_color.clone()),
             // Waypoint type
             (node.waypoint_type.clone(), normal_text_color.clone()),
-            // Supply
-            (node.supply.to_string(), node.supply_color()),
             // Activity
-            (node.activity.to_string(), node.activity_color()),
+            (format!("A: {}", node.activity.to_string()), node.activity_color()),
+            // Supply
+            (format!("S: {}", node.supply.to_string()), node.supply_color()),
             // Volume
             (format!("v: {}", node.volume), normal_text_color.clone()),
             // Costs
@@ -859,7 +859,7 @@ fn generate_node_svg(node: &TechNode) -> String {
 // Refactored edge label SVG generator with increased padding
 fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, direction_y: f64) -> String {
     // Label parameters
-    let label_width = 100.0;
+    let label_width = 105.0;
     let label_height = 60.0;  // Increased height from 55.0 to 60.0 for more padding
     let padding = 8.0;        // Increased padding from 5.0 to 8.0
 
@@ -926,9 +926,9 @@ fn generate_edge_label_svg(x: f64, y: f64, edge: &TechEdge, direction_x: f64, di
     ];
 
     let right_text_lines = vec![
-        (activity.to_string(), activity_color),
-        (supply.to_string(), supply_color),
-        (format!("prof.: {}", profit), ColorString::from(profit_color)),
+         (format!("A: {}", activity), activity_color),
+         (format!("S: {}", supply), supply_color),
+        (format!("{:+}", profit), ColorString::from(profit_color)),
     ];
 
     // Calculate vertical center position with adjustment for 3 lines of text
