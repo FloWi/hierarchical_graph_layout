@@ -73,3 +73,9 @@ rank(rank idx: 0, inner_rank_idx: 4); (y: 49, x: 1302); node: CLOTHING - X1-AD75
 rank(rank idx: 1, inner_rank_idx: 4); (y: 441, x: 1302); node: SHIP_PARTS - X1-AD75-D43
 
 ```
+
+## OCD
+
+If my ocd wants the perfect graph, I could use a graphviz wrapper for rust (requires the installed graphviz binary), have it generate json output and parse the coordinates from there.
+
+See `output.json` for an example. 
