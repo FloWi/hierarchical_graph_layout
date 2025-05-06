@@ -8,12 +8,12 @@
                     rx="5"
                     ry="5"
                     fill="#0e3a4d"
-                    stroke="#22c55e"
+                    stroke="#eab308"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="1884" y="960" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1884" dy="0" font-size="13" fill="#FFFFFF">ADVANCED_CIRCUITRY</tspan><tspan x="1884" dy="20" fill="#CCCCCC">X1-AD75-D44</tspan><tspan x="1884" dy="20" fill="#CCCCCC">ADVANCED</tspan><tspan x="1884" dy="20" fill="#22c55e">A: Strong</tspan><tspan x="1884" dy="20" fill="#f97316">S: Limited</tspan><tspan x="1884" dy="20" fill="#CCCCCC">v: 42</tspan><tspan x="1884" dy="20" fill="#CCCCCC">p: 360c</tspan></text>
+                <text x="1884" y="960" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1884" dy="0" font-size="13" fill="#FFFFFF">ADVANCED_CIRCUITRY</tspan><tspan x="1884" dy="20" fill="#CCCCCC">X1-AD75-D44</tspan><tspan x="1884" dy="20" fill="#CCCCCC">ADVANCED</tspan><tspan x="1884" dy="20" fill="#eab308">A: Weak</tspan><tspan x="1884" dy="20" fill="#22c55e">S: Abundant</tspan><tspan x="1884" dy="20" fill="#CCCCCC">v: 25</tspan><tspan x="1884" dy="20" fill="#CCCCCC">p: 224c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -29,7 +29,7 @@
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="984" y="-52.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">ALUMINUM</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-H51</tspan><tspan x="984" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="984" dy="20" fill="#86efac">A: Growing</tspan><tspan x="984" dy="20" fill="#f97316">S: Limited</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 36</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 198c</tspan></text>
+                <text x="984" y="-52.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">ALUMINUM</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-H51</tspan><tspan x="984" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="984" dy="20" fill="#86efac">A: Growing</tspan><tspan x="984" dy="20" fill="#f97316">S: Limited</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 43</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 207c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -40,12 +40,12 @@
                     rx="5"
                     ry="5"
                     fill="#091c26"
-                    stroke="#eab308"
+                    stroke="#ef4444"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="534" y="-52.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">ALUMINUM_ORE</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="534" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="534" dy="20" fill="#eab308">A: Weak</tspan><tspan x="534" dy="20" fill="#86efac">S: High</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 13</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 361c</tspan></text>
+                <text x="534" y="-52.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">ALUMINUM_ORE</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="534" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="534" dy="20" fill="#ef4444">A: Restricted</tspan><tspan x="534" dy="20" fill="#fde047">S: Moderate</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 55</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 138c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -56,12 +56,12 @@
                     rx="5"
                     ry="5"
                     fill="#0a2533"
-                    stroke="#22c55e"
+                    stroke="#86efac"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="984" y="847.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">COPPER</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-H51</tspan><tspan x="984" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="984" dy="20" fill="#22c55e">A: Strong</tspan><tspan x="984" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 24</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 396c</tspan></text>
+                <text x="984" y="847.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">COPPER</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-H51</tspan><tspan x="984" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="984" dy="20" fill="#86efac">A: Growing</tspan><tspan x="984" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 57</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 208c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -72,12 +72,12 @@
                     rx="5"
                     ry="5"
                     fill="#091c26"
-                    stroke="#22c55e"
+                    stroke="#86efac"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="534" y="847.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">COPPER_ORE</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="534" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="534" dy="20" fill="#22c55e">A: Strong</tspan><tspan x="534" dy="20" fill="#f97316">S: Limited</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 23</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 68c</tspan></text>
+                <text x="534" y="847.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">COPPER_ORE</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="534" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="534" dy="20" fill="#86efac">A: Growing</tspan><tspan x="534" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 77</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 190c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -88,12 +88,12 @@
                     rx="5"
                     ry="5"
                     fill="#0c3040"
-                    stroke="#86efac"
+                    stroke="#eab308"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="1434" y="847.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1434" dy="0" font-size="13" fill="#FFFFFF">ELECTRONICS</tspan><tspan x="1434" dy="20" fill="#CCCCCC">X1-AD75-F49</tspan><tspan x="1434" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="1434" dy="20" fill="#86efac">A: Growing</tspan><tspan x="1434" dy="20" fill="#86efac">S: High</tspan><tspan x="1434" dy="20" fill="#CCCCCC">v: 75</tspan><tspan x="1434" dy="20" fill="#CCCCCC">p: 215c</tspan></text>
+                <text x="1434" y="847.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1434" dy="0" font-size="13" fill="#FFFFFF">ELECTRONICS</tspan><tspan x="1434" dy="20" fill="#CCCCCC">X1-AD75-F49</tspan><tspan x="1434" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="1434" dy="20" fill="#eab308">A: Weak</tspan><tspan x="1434" dy="20" fill="#f97316">S: Limited</tspan><tspan x="1434" dy="20" fill="#CCCCCC">v: 99</tspan><tspan x="1434" dy="20" fill="#CCCCCC">p: 107c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -104,12 +104,12 @@
                     rx="5"
                     ry="5"
                     fill="#0c3040"
-                    stroke="#86efac"
+                    stroke="#ef4444"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="1434" y="60" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1434" dy="0" font-size="13" fill="#FFFFFF">EQUIPMENT</tspan><tspan x="1434" dy="20" fill="#CCCCCC">X1-AD75-K81</tspan><tspan x="1434" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="1434" dy="20" fill="#86efac">A: Growing</tspan><tspan x="1434" dy="20" fill="#f97316">S: Limited</tspan><tspan x="1434" dy="20" fill="#CCCCCC">v: 9</tspan><tspan x="1434" dy="20" fill="#CCCCCC">p: 139c</tspan></text>
+                <text x="1434" y="60" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1434" dy="0" font-size="13" fill="#FFFFFF">EQUIPMENT</tspan><tspan x="1434" dy="20" fill="#CCCCCC">X1-AD75-K81</tspan><tspan x="1434" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="1434" dy="20" fill="#ef4444">A: Restricted</tspan><tspan x="1434" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="1434" dy="20" fill="#CCCCCC">v: 10</tspan><tspan x="1434" dy="20" fill="#CCCCCC">p: 225c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -120,12 +120,12 @@
                     rx="5"
                     ry="5"
                     fill="#0c3040"
-                    stroke="#ef4444"
+                    stroke="#86efac"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="984" y="622.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">FAB_MATS</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-F49</tspan><tspan x="984" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="984" dy="20" fill="#ef4444">A: Restricted</tspan><tspan x="984" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 22</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 273c</tspan></text>
+                <text x="984" y="622.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">FAB_MATS</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-F49</tspan><tspan x="984" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="984" dy="20" fill="#86efac">A: Growing</tspan><tspan x="984" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 34</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 357c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -141,7 +141,7 @@
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="534" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">IRON</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-H51</tspan><tspan x="534" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="534" dy="20" fill="#ef4444">A: Restricted</tspan><tspan x="534" dy="20" fill="#f97316">S: Limited</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 49</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 90c</tspan></text>
+                <text x="534" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">IRON</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-H51</tspan><tspan x="534" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="534" dy="20" fill="#ef4444">A: Restricted</tspan><tspan x="534" dy="20" fill="#22c55e">S: Abundant</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 33</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 446c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -157,27 +157,11 @@
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="84" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="84" dy="0" font-size="13" fill="#FFFFFF">IRON_ORE</tspan><tspan x="84" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="84" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="84" dy="20" fill="#eab308">A: Weak</tspan><tspan x="84" dy="20" fill="#22c55e">S: Abundant</tspan><tspan x="84" dy="20" fill="#CCCCCC">v: 51</tspan><tspan x="84" dy="20" fill="#CCCCCC">p: 163c</tspan></text>
+                <text x="84" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="84" dy="0" font-size="13" fill="#FFFFFF">IRON_ORE</tspan><tspan x="84" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="84" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="84" dy="20" fill="#eab308">A: Weak</tspan><tspan x="84" dy="20" fill="#fde047">S: Moderate</tspan><tspan x="84" dy="20" fill="#CCCCCC">v: 56</tspan><tspan x="84" dy="20" fill="#CCCCCC">p: 339c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
                     x="-100"
-                    y="142.5"
-                    width="200"
-                    height="165"
-                    rx="5"
-                    ry="5"
-                    fill="#0a2533"
-                    stroke="#86efac"
-                    stroke-width="4"
-                />
-
-                <!-- Node text content (using multiline text) -->
-                <text x="84" y="172.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="84" dy="0" font-size="13" fill="#FFFFFF">LIQUID_HYDROGEN</tspan><tspan x="84" dy="20" fill="#CCCCCC">X1-AD75-C40</tspan><tspan x="84" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="84" dy="20" fill="#86efac">A: Growing</tspan><tspan x="84" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="84" dy="20" fill="#CCCCCC">v: 79</tspan><tspan x="84" dy="20" fill="#CCCCCC">p: 147c</tspan></text>
-            </g><g>
-                <!-- Node background -->
-                <rect
-                    x="350"
                     y="142.5"
                     width="200"
                     height="165"
@@ -189,7 +173,23 @@
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="534" y="172.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">LIQUID_HYDROGEN</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-C41</tspan><tspan x="534" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="534" dy="20" fill="#eab308">A: Weak</tspan><tspan x="534" dy="20" fill="#22c55e">S: Abundant</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 73</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 370c</tspan></text>
+                <text x="84" y="172.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="84" dy="0" font-size="13" fill="#FFFFFF">LIQUID_HYDROGEN</tspan><tspan x="84" dy="20" fill="#CCCCCC">X1-AD75-C40</tspan><tspan x="84" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="84" dy="20" fill="#eab308">A: Weak</tspan><tspan x="84" dy="20" fill="#fde047">S: Moderate</tspan><tspan x="84" dy="20" fill="#CCCCCC">v: 51</tspan><tspan x="84" dy="20" fill="#CCCCCC">p: 64c</tspan></text>
+            </g><g>
+                <!-- Node background -->
+                <rect
+                    x="350"
+                    y="142.5"
+                    width="200"
+                    height="165"
+                    rx="5"
+                    ry="5"
+                    fill="#0a2533"
+                    stroke="#ef4444"
+                    stroke-width="4"
+                />
+
+                <!-- Node text content (using multiline text) -->
+                <text x="534" y="172.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">LIQUID_HYDROGEN</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-C41</tspan><tspan x="534" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="534" dy="20" fill="#ef4444">A: Restricted</tspan><tspan x="534" dy="20" fill="#f97316">S: Limited</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 92</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 269c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -200,12 +200,12 @@
                     rx="5"
                     ry="5"
                     fill="#0c3040"
-                    stroke="#86efac"
+                    stroke="#eab308"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="984" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">MACHINERY</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-E46</tspan><tspan x="984" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="984" dy="20" fill="#86efac">A: Growing</tspan><tspan x="984" dy="20" fill="#fde047">S: Moderate</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 41</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 387c</tspan></text>
+                <text x="984" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">MACHINERY</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-E46</tspan><tspan x="984" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="984" dy="20" fill="#eab308">A: Weak</tspan><tspan x="984" dy="20" fill="#22c55e">S: Abundant</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 94</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 489c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -216,12 +216,12 @@
                     rx="5"
                     ry="5"
                     fill="#0e3a4d"
-                    stroke="#22c55e"
+                    stroke="#ef4444"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="1434" y="1072.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1434" dy="0" font-size="13" fill="#FFFFFF">MICROPROCESSORS</tspan><tspan x="1434" dy="20" fill="#CCCCCC">X1-AD75-A3</tspan><tspan x="1434" dy="20" fill="#CCCCCC">ADVANCED</tspan><tspan x="1434" dy="20" fill="#22c55e">A: Strong</tspan><tspan x="1434" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="1434" dy="20" fill="#CCCCCC">v: 80</tspan><tspan x="1434" dy="20" fill="#CCCCCC">p: 281c</tspan></text>
+                <text x="1434" y="1072.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1434" dy="0" font-size="13" fill="#FFFFFF">MICROPROCESSORS</tspan><tspan x="1434" dy="20" fill="#CCCCCC">X1-AD75-A3</tspan><tspan x="1434" dy="20" fill="#CCCCCC">ADVANCED</tspan><tspan x="1434" dy="20" fill="#ef4444">A: Restricted</tspan><tspan x="1434" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="1434" dy="20" fill="#CCCCCC">v: 44</tspan><tspan x="1434" dy="20" fill="#CCCCCC">p: 264c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -232,12 +232,12 @@
                     rx="5"
                     ry="5"
                     fill="#0c3040"
-                    stroke="#ef4444"
+                    stroke="#22c55e"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="984" y="172.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">PLASTICS</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-G50</tspan><tspan x="984" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="984" dy="20" fill="#ef4444">A: Restricted</tspan><tspan x="984" dy="20" fill="#86efac">S: High</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 86</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 68c</tspan></text>
+                <text x="984" y="172.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">PLASTICS</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-G50</tspan><tspan x="984" dy="20" fill="#CCCCCC">INDUSTRIAL</tspan><tspan x="984" dy="20" fill="#22c55e">A: Strong</tspan><tspan x="984" dy="20" fill="#fde047">S: Moderate</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 15</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 81c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -248,12 +248,12 @@
                     rx="5"
                     ry="5"
                     fill="#0a2533"
-                    stroke="#22c55e"
+                    stroke="#eab308"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="534" y="622.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">QUARTZ_SAND</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-H53</tspan><tspan x="534" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="534" dy="20" fill="#22c55e">A: Strong</tspan><tspan x="534" dy="20" fill="#fde047">S: Moderate</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 84</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 400c</tspan></text>
+                <text x="534" y="622.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">QUARTZ_SAND</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-H53</tspan><tspan x="534" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="534" dy="20" fill="#eab308">A: Weak</tspan><tspan x="534" dy="20" fill="#22c55e">S: Abundant</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 87</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 107c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -269,7 +269,7 @@
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="84" y="622.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="84" dy="0" font-size="13" fill="#FFFFFF">QUARTZ_SAND</tspan><tspan x="84" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="84" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="84" dy="20" fill="#eab308">A: Weak</tspan><tspan x="84" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="84" dy="20" fill="#CCCCCC">v: 19</tspan><tspan x="84" dy="20" fill="#CCCCCC">p: 433c</tspan></text>
+                <text x="84" y="622.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="84" dy="0" font-size="13" fill="#FFFFFF">QUARTZ_SAND</tspan><tspan x="84" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="84" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="84" dy="20" fill="#eab308">A: Weak</tspan><tspan x="84" dy="20" fill="#86efac">S: High</tspan><tspan x="84" dy="20" fill="#CCCCCC">v: 77</tspan><tspan x="84" dy="20" fill="#CCCCCC">p: 260c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -285,7 +285,7 @@
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="1884" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1884" dy="0" font-size="13" fill="#FFFFFF">SHIP_PARTS</tspan><tspan x="1884" dy="20" fill="#CCCCCC">X1-AD75-D43</tspan><tspan x="1884" dy="20" fill="#CCCCCC">ADVANCED</tspan><tspan x="1884" dy="20" fill="#86efac">A: Growing</tspan><tspan x="1884" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="1884" dy="20" fill="#CCCCCC">v: 15</tspan><tspan x="1884" dy="20" fill="#CCCCCC">p: 317c</tspan></text>
+                <text x="1884" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1884" dy="0" font-size="13" fill="#FFFFFF">SHIP_PARTS</tspan><tspan x="1884" dy="20" fill="#CCCCCC">X1-AD75-D43</tspan><tspan x="1884" dy="20" fill="#CCCCCC">ADVANCED</tspan><tspan x="1884" dy="20" fill="#86efac">A: Growing</tspan><tspan x="1884" dy="20" fill="#22c55e">S: Abundant</tspan><tspan x="1884" dy="20" fill="#CCCCCC">v: 38</tspan><tspan x="1884" dy="20" fill="#CCCCCC">p: 277c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -296,12 +296,12 @@
                     rx="5"
                     ry="5"
                     fill="#0e3a4d"
-                    stroke="#22c55e"
+                    stroke="#ef4444"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="1434" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1434" dy="0" font-size="13" fill="#FFFFFF">SHIP_PLATING</tspan><tspan x="1434" dy="20" fill="#CCCCCC">X1-AD75-D44</tspan><tspan x="1434" dy="20" fill="#CCCCCC">ADVANCED</tspan><tspan x="1434" dy="20" fill="#22c55e">A: Strong</tspan><tspan x="1434" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="1434" dy="20" fill="#CCCCCC">v: 62</tspan><tspan x="1434" dy="20" fill="#CCCCCC">p: 61c</tspan></text>
+                <text x="1434" y="397.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="1434" dy="0" font-size="13" fill="#FFFFFF">SHIP_PLATING</tspan><tspan x="1434" dy="20" fill="#CCCCCC">X1-AD75-D44</tspan><tspan x="1434" dy="20" fill="#CCCCCC">ADVANCED</tspan><tspan x="1434" dy="20" fill="#ef4444">A: Restricted</tspan><tspan x="1434" dy="20" fill="#f97316">S: Limited</tspan><tspan x="1434" dy="20" fill="#CCCCCC">v: 65</tspan><tspan x="1434" dy="20" fill="#CCCCCC">p: 211c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -317,7 +317,7 @@
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="984" y="1072.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">SILICON_CRYSTALS</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-H53</tspan><tspan x="984" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="984" dy="20" fill="#86efac">A: Growing</tspan><tspan x="984" dy="20" fill="#fde047">S: Moderate</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 10</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 353c</tspan></text>
+                <text x="984" y="1072.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="984" dy="0" font-size="13" fill="#FFFFFF">SILICON_CRYSTALS</tspan><tspan x="984" dy="20" fill="#CCCCCC">X1-AD75-H53</tspan><tspan x="984" dy="20" fill="#CCCCCC">REFINED</tspan><tspan x="984" dy="20" fill="#86efac">A: Growing</tspan><tspan x="984" dy="20" fill="#ef4444">S: Scarce</tspan><tspan x="984" dy="20" fill="#CCCCCC">v: 31</tspan><tspan x="984" dy="20" fill="#CCCCCC">p: 370c</tspan></text>
             </g><g>
                 <!-- Node background -->
                 <rect
@@ -328,12 +328,12 @@
                     rx="5"
                     ry="5"
                     fill="#091c26"
-                    stroke="#22c55e"
+                    stroke="#86efac"
                     stroke-width="4"
                 />
 
                 <!-- Node text content (using multiline text) -->
-                <text x="534" y="1072.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">SILICON_CRYSTALS</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="534" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="534" dy="20" fill="#22c55e">A: Strong</tspan><tspan x="534" dy="20" fill="#fde047">S: Moderate</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 47</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 426c</tspan></text>
+                <text x="534" y="1072.5" font-family="Arial" font-size="10" text-anchor="end"><tspan x="534" dy="0" font-size="13" fill="#FFFFFF">SILICON_CRYSTALS</tspan><tspan x="534" dy="20" fill="#CCCCCC">X1-AD75-XD5A</tspan><tspan x="534" dy="20" fill="#CCCCCC">RAW_MATERIAL</tspan><tspan x="534" dy="20" fill="#86efac">A: Growing</tspan><tspan x="534" dy="20" fill="#22c55e">S: Abundant</tspan><tspan x="534" dy="20" fill="#CCCCCC">v: 12</tspan><tspan x="534" dy="20" fill="#CCCCCC">p: 312c</tspan></text>
             </g><g>
             <!-- Label background -->
             <rect
@@ -350,10 +350,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="725.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 111</tspan><tspan x="725.5" dy="18" fill="#eee">v: 11</tspan><tspan x="725.5" dy="18" fill="#eee">p: 26c</tspan></text>
+            <text x="725.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 112</tspan><tspan x="725.5" dy="18" fill="#eee">v: 38</tspan><tspan x="725.5" dy="18" fill="#eee">p: 106c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="814.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="814.5" dy="18" fill="#86efac">S: High</tspan><tspan x="814.5" dy="18" fill="#ef4444">-33</tspan></text>
+            <text x="814.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#eab308">A: Weak</tspan><tspan x="814.5" dy="18" fill="#ef4444">S: Scarce</tspan><tspan x="814.5" dy="18" fill="#22c55e">+177</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -370,10 +370,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="725.5" y="207" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 92</tspan><tspan x="725.5" dy="18" fill="#eee">v: 36</tspan><tspan x="725.5" dy="18" fill="#eee">p: 91c</tspan></text>
+            <text x="725.5" y="207" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 11</tspan><tspan x="725.5" dy="18" fill="#eee">v: 3</tspan><tspan x="725.5" dy="18" fill="#eee">p: 60c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="814.5" y="207" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#86efac">A: Growing</tspan><tspan x="814.5" dy="18" fill="#86efac">S: High</tspan><tspan x="814.5" dy="18" fill="#22c55e">+99</tspan></text>
+            <text x="814.5" y="207" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#86efac">A: Growing</tspan><tspan x="814.5" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="814.5" dy="18" fill="#22c55e">+226</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -390,10 +390,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1178.6671842700025" y="945.4164078649987" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1178.6671842700025" dy="0" fill="#eee">d: 139</tspan><tspan x="1178.6671842700025" dy="18" fill="#eee">v: 19</tspan><tspan x="1178.6671842700025" dy="18" fill="#eee">p: 32c</tspan></text>
+            <text x="1178.6671842700025" y="945.4164078649987" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1178.6671842700025" dy="0" fill="#eee">d: 93</tspan><tspan x="1178.6671842700025" dy="18" fill="#eee">v: 9</tspan><tspan x="1178.6671842700025" dy="18" fill="#eee">p: 95c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1267.6671842700025" y="945.4164078649987" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1267.6671842700025" dy="0" fill="#22c55e">A: Strong</tspan><tspan x="1267.6671842700025" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="1267.6671842700025" dy="18" fill="#22c55e">+168</tspan></text>
+            <text x="1267.6671842700025" y="945.4164078649987" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1267.6671842700025" dy="0" fill="#86efac">A: Growing</tspan><tspan x="1267.6671842700025" dy="18" fill="#ef4444">S: Scarce</tspan><tspan x="1267.6671842700025" dy="18" fill="#22c55e">+18</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -410,10 +410,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1175.5" y="882" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1175.5" dy="0" fill="#eee">d: 45</tspan><tspan x="1175.5" dy="18" fill="#eee">v: 6</tspan><tspan x="1175.5" dy="18" fill="#eee">p: 143c</tspan></text>
+            <text x="1175.5" y="882" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1175.5" dy="0" fill="#eee">d: 114</tspan><tspan x="1175.5" dy="18" fill="#eee">v: 27</tspan><tspan x="1175.5" dy="18" fill="#eee">p: 49c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1264.5" y="882" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1264.5" dy="0" fill="#eab308">A: Weak</tspan><tspan x="1264.5" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="1264.5" dy="18" fill="#22c55e">+41</tspan></text>
+            <text x="1264.5" y="882" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1264.5" dy="0" fill="#86efac">A: Growing</tspan><tspan x="1264.5" dy="18" fill="#86efac">S: High</tspan><tspan x="1264.5" dy="18" fill="#22c55e">+119</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -430,10 +430,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1176.39572499564" y="62.223931248910006" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1176.39572499564" dy="0" fill="#eee">d: 60</tspan><tspan x="1176.39572499564" dy="18" fill="#eee">v: 17</tspan><tspan x="1176.39572499564" dy="18" fill="#eee">p: 45c</tspan></text>
+            <text x="1176.39572499564" y="62.223931248910006" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1176.39572499564" dy="0" fill="#eee">d: 41</tspan><tspan x="1176.39572499564" dy="18" fill="#eee">v: 19</tspan><tspan x="1176.39572499564" dy="18" fill="#eee">p: 128c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1265.39572499564" y="62.223931248910006" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1265.39572499564" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="1265.39572499564" dy="18" fill="#86efac">S: High</tspan><tspan x="1265.39572499564" dy="18" fill="#22c55e">+84</tspan></text>
+            <text x="1265.39572499564" y="62.223931248910006" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1265.39572499564" dy="0" fill="#22c55e">A: Strong</tspan><tspan x="1265.39572499564" dy="18" fill="#f97316">S: Limited</tspan><tspan x="1265.39572499564" dy="18" fill="#ef4444">-32</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -450,10 +450,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1176.39572499564" y="126.77606875108998" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1176.39572499564" dy="0" fill="#eee">d: 12</tspan><tspan x="1176.39572499564" dy="18" fill="#eee">v: 1</tspan><tspan x="1176.39572499564" dy="18" fill="#eee">p: 19c</tspan></text>
+            <text x="1176.39572499564" y="126.77606875108998" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1176.39572499564" dy="0" fill="#eee">d: 137</tspan><tspan x="1176.39572499564" dy="18" fill="#eee">v: 8</tspan><tspan x="1176.39572499564" dy="18" fill="#eee">p: 100c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1265.39572499564" y="126.77606875108998" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1265.39572499564" dy="0" fill="#eab308">A: Weak</tspan><tspan x="1265.39572499564" dy="18" fill="#ef4444">S: Scarce</tspan><tspan x="1265.39572499564" dy="18" fill="#22c55e">+61</tspan></text>
+            <text x="1265.39572499564" y="126.77606875108998" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1265.39572499564" dy="0" fill="#eab308">A: Weak</tspan><tspan x="1265.39572499564" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="1265.39572499564" dy="18" fill="#22c55e">+140</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -470,10 +470,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1201.7867965644036" y="328.2867965644036" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1201.7867965644036" dy="0" fill="#eee">d: 31</tspan><tspan x="1201.7867965644036" dy="18" fill="#eee">v: 36</tspan><tspan x="1201.7867965644036" dy="18" fill="#eee">p: 90c</tspan></text>
+            <text x="1201.7867965644036" y="328.2867965644036" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1201.7867965644036" dy="0" fill="#eee">d: 19</tspan><tspan x="1201.7867965644036" dy="18" fill="#eee">v: 45</tspan><tspan x="1201.7867965644036" dy="18" fill="#eee">p: 117c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1290.7867965644036" y="328.2867965644036" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1290.7867965644036" dy="0" fill="#22c55e">A: Strong</tspan><tspan x="1290.7867965644036" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="1290.7867965644036" dy="18" fill="#22c55e">+88</tspan></text>
+            <text x="1290.7867965644036" y="328.2867965644036" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1290.7867965644036" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="1290.7867965644036" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="1290.7867965644036" dy="18" fill="#22c55e">+99</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -490,10 +490,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1175.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1175.5" dy="0" fill="#eee">d: 132</tspan><tspan x="1175.5" dy="18" fill="#eee">v: 31</tspan><tspan x="1175.5" dy="18" fill="#eee">p: 14c</tspan></text>
+            <text x="1175.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1175.5" dy="0" fill="#eee">d: 91</tspan><tspan x="1175.5" dy="18" fill="#eee">v: 44</tspan><tspan x="1175.5" dy="18" fill="#eee">p: 10c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1264.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1264.5" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="1264.5" dy="18" fill="#86efac">S: High</tspan><tspan x="1264.5" dy="18" fill="#22c55e">+19</tspan></text>
+            <text x="1264.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1264.5" dy="0" fill="#86efac">A: Growing</tspan><tspan x="1264.5" dy="18" fill="#ef4444">S: Scarce</tspan><tspan x="1264.5" dy="18" fill="#22c55e">+32</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -510,10 +510,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="728.6671842700025" y="593.5835921350013" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="728.6671842700025" dy="0" fill="#eee">d: 134</tspan><tspan x="728.6671842700025" dy="18" fill="#eee">v: 45</tspan><tspan x="728.6671842700025" dy="18" fill="#eee">p: 119c</tspan></text>
+            <text x="728.6671842700025" y="593.5835921350013" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="728.6671842700025" dy="0" fill="#eee">d: 20</tspan><tspan x="728.6671842700025" dy="18" fill="#eee">v: 15</tspan><tspan x="728.6671842700025" dy="18" fill="#eee">p: 174c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="817.6671842700025" y="593.5835921350013" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="817.6671842700025" dy="0" fill="#22c55e">A: Strong</tspan><tspan x="817.6671842700025" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="817.6671842700025" dy="18" fill="#22c55e">+195</tspan></text>
+            <text x="817.6671842700025" y="593.5835921350013" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="817.6671842700025" dy="0" fill="#86efac">A: Growing</tspan><tspan x="817.6671842700025" dy="18" fill="#ef4444">S: Scarce</tspan><tspan x="817.6671842700025" dy="18" fill="#22c55e">+121</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -530,10 +530,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="725.5" y="657" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 72</tspan><tspan x="725.5" dy="18" fill="#eee">v: 3</tspan><tspan x="725.5" dy="18" fill="#eee">p: 43c</tspan></text>
+            <text x="725.5" y="657" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 32</tspan><tspan x="725.5" dy="18" fill="#eee">v: 39</tspan><tspan x="725.5" dy="18" fill="#eee">p: 95c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="814.5" y="657" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="814.5" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="814.5" dy="18" fill="#22c55e">+19</tspan></text>
+            <text x="814.5" y="657" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#eab308">A: Weak</tspan><tspan x="814.5" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="814.5" dy="18" fill="#22c55e">+238</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -550,10 +550,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1175.5" y="1107" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1175.5" dy="0" fill="#eee">d: 87</tspan><tspan x="1175.5" dy="18" fill="#eee">v: 10</tspan><tspan x="1175.5" dy="18" fill="#eee">p: 115c</tspan></text>
+            <text x="1175.5" y="1107" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1175.5" dy="0" fill="#eee">d: 67</tspan><tspan x="1175.5" dy="18" fill="#eee">v: 9</tspan><tspan x="1175.5" dy="18" fill="#eee">p: 31c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1264.5" y="1107" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1264.5" dy="0" fill="#eab308">A: Weak</tspan><tspan x="1264.5" dy="18" fill="#ef4444">S: Scarce</tspan><tspan x="1264.5" dy="18" fill="#22c55e">+203</tspan></text>
+            <text x="1264.5" y="1107" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1264.5" dy="0" fill="#eab308">A: Weak</tspan><tspan x="1264.5" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="1264.5" dy="18" fill="#22c55e">+110</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -570,10 +570,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1178.6671842700025" y="1043.5835921350013" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1178.6671842700025" dy="0" fill="#eee">d: 149</tspan><tspan x="1178.6671842700025" dy="18" fill="#eee">v: 28</tspan><tspan x="1178.6671842700025" dy="18" fill="#eee">p: 113c</tspan></text>
+            <text x="1178.6671842700025" y="1043.5835921350013" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1178.6671842700025" dy="0" fill="#eee">d: 82</tspan><tspan x="1178.6671842700025" dy="18" fill="#eee">v: 40</tspan><tspan x="1178.6671842700025" dy="18" fill="#eee">p: 101c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1267.6671842700025" y="1043.5835921350013" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1267.6671842700025" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="1267.6671842700025" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="1267.6671842700025" dy="18" fill="#22c55e">+69</tspan></text>
+            <text x="1267.6671842700025" y="1043.5835921350013" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1267.6671842700025" dy="0" fill="#22c55e">A: Strong</tspan><tspan x="1267.6671842700025" dy="18" fill="#f97316">S: Limited</tspan><tspan x="1267.6671842700025" dy="18" fill="#22c55e">+214</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -590,10 +590,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1631.5" y="339" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1631.5" dy="0" fill="#eee">d: 34</tspan><tspan x="1631.5" dy="18" fill="#eee">v: 26</tspan><tspan x="1631.5" dy="18" fill="#eee">p: 130c</tspan></text>
+            <text x="1631.5" y="339" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1631.5" dy="0" fill="#eee">d: 33</tspan><tspan x="1631.5" dy="18" fill="#eee">v: 1</tspan><tspan x="1631.5" dy="18" fill="#eee">p: 194c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1720.5" y="339" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1720.5" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="1720.5" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="1720.5" dy="18" fill="#22c55e">+129</tspan></text>
+            <text x="1720.5" y="339" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1720.5" dy="0" fill="#eab308">A: Weak</tspan><tspan x="1720.5" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="1720.5" dy="18" fill="#ef4444">-21</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -610,10 +610,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1651.7867965644036" y="535.7132034355964" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1651.7867965644036" dy="0" fill="#eee">d: 83</tspan><tspan x="1651.7867965644036" dy="18" fill="#eee">v: 26</tspan><tspan x="1651.7867965644036" dy="18" fill="#eee">p: 184c</tspan></text>
+            <text x="1651.7867965644036" y="535.7132034355964" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1651.7867965644036" dy="0" fill="#eee">d: 130</tspan><tspan x="1651.7867965644036" dy="18" fill="#eee">v: 25</tspan><tspan x="1651.7867965644036" dy="18" fill="#eee">p: 79c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1740.7867965644036" y="535.7132034355964" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1740.7867965644036" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="1740.7867965644036" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="1740.7867965644036" dy="18" fill="#22c55e">+233</tspan></text>
+            <text x="1740.7867965644036" y="535.7132034355964" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1740.7867965644036" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="1740.7867965644036" dy="18" fill="#f97316">S: Limited</tspan><tspan x="1740.7867965644036" dy="18" fill="#ef4444">-3</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -630,10 +630,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1626.39572499564" y="962.22393124891" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1626.39572499564" dy="0" fill="#eee">d: 75</tspan><tspan x="1626.39572499564" dy="18" fill="#eee">v: 45</tspan><tspan x="1626.39572499564" dy="18" fill="#eee">p: 46c</tspan></text>
+            <text x="1626.39572499564" y="962.22393124891" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1626.39572499564" dy="0" fill="#eee">d: 74</tspan><tspan x="1626.39572499564" dy="18" fill="#eee">v: 38</tspan><tspan x="1626.39572499564" dy="18" fill="#eee">p: 149c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1715.39572499564" y="962.22393124891" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1715.39572499564" dy="0" fill="#eab308">A: Weak</tspan><tspan x="1715.39572499564" dy="18" fill="#ef4444">S: Scarce</tspan><tspan x="1715.39572499564" dy="18" fill="#22c55e">+114</tspan></text>
+            <text x="1715.39572499564" y="962.22393124891" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1715.39572499564" dy="0" fill="#eab308">A: Weak</tspan><tspan x="1715.39572499564" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="1715.39572499564" dy="18" fill="#22c55e">+192</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -650,10 +650,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="1626.39572499564" y="1026.77606875109" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1626.39572499564" dy="0" fill="#eee">d: 106</tspan><tspan x="1626.39572499564" dy="18" fill="#eee">v: 44</tspan><tspan x="1626.39572499564" dy="18" fill="#eee">p: 87c</tspan></text>
+            <text x="1626.39572499564" y="1026.77606875109" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="1626.39572499564" dy="0" fill="#eee">d: 96</tspan><tspan x="1626.39572499564" dy="18" fill="#eee">v: 17</tspan><tspan x="1626.39572499564" dy="18" fill="#eee">p: 65c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="1715.39572499564" y="1026.77606875109" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1715.39572499564" dy="0" fill="#86efac">A: Growing</tspan><tspan x="1715.39572499564" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="1715.39572499564" dy="18" fill="#22c55e">+44</tspan></text>
+            <text x="1715.39572499564" y="1026.77606875109" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="1715.39572499564" dy="0" fill="#eab308">A: Weak</tspan><tspan x="1715.39572499564" dy="18" fill="#f97316">S: Limited</tspan><tspan x="1715.39572499564" dy="18" fill="#22c55e">+32</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -670,10 +670,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="275.5" y="657" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="275.5" dy="0" fill="#eee">d: 69</tspan><tspan x="275.5" dy="18" fill="#eee">v: 4</tspan><tspan x="275.5" dy="18" fill="#eee">p: 69c</tspan></text>
+            <text x="275.5" y="657" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="275.5" dy="0" fill="#eee">d: 141</tspan><tspan x="275.5" dy="18" fill="#eee">v: 4</tspan><tspan x="275.5" dy="18" fill="#eee">p: 31c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="364.5" y="657" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="364.5" dy="0" fill="#86efac">A: Growing</tspan><tspan x="364.5" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="364.5" dy="18" fill="#22c55e">+248</tspan></text>
+            <text x="364.5" y="657" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="364.5" dy="0" fill="#eab308">A: Weak</tspan><tspan x="364.5" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="364.5" dy="18" fill="#22c55e">+209</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -690,10 +690,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="725.5" y="882" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 23</tspan><tspan x="725.5" dy="18" fill="#eee">v: 48</tspan><tspan x="725.5" dy="18" fill="#eee">p: 174c</tspan></text>
+            <text x="725.5" y="882" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 135</tspan><tspan x="725.5" dy="18" fill="#eee">v: 23</tspan><tspan x="725.5" dy="18" fill="#eee">p: 106c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="814.5" y="882" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#86efac">A: Growing</tspan><tspan x="814.5" dy="18" fill="#ef4444">S: Scarce</tspan><tspan x="814.5" dy="18" fill="#22c55e">+178</tspan></text>
+            <text x="814.5" y="882" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#eab308">A: Weak</tspan><tspan x="814.5" dy="18" fill="#f97316">S: Limited</tspan><tspan x="814.5" dy="18" fill="#22c55e">+25</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -710,10 +710,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="275.5" y="207" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="275.5" dy="0" fill="#eee">d: 124</tspan><tspan x="275.5" dy="18" fill="#eee">v: 25</tspan><tspan x="275.5" dy="18" fill="#eee">p: 63c</tspan></text>
+            <text x="275.5" y="207" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="275.5" dy="0" fill="#eee">d: 128</tspan><tspan x="275.5" dy="18" fill="#eee">v: 22</tspan><tspan x="275.5" dy="18" fill="#eee">p: 159c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="364.5" y="207" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="364.5" dy="0" fill="#86efac">A: Growing</tspan><tspan x="364.5" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="364.5" dy="18" fill="#22c55e">+63</tspan></text>
+            <text x="364.5" y="207" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="364.5" dy="0" fill="#eab308">A: Weak</tspan><tspan x="364.5" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="364.5" dy="18" fill="#22c55e">+30</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -730,10 +730,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="275.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="275.5" dy="0" fill="#eee">d: 106</tspan><tspan x="275.5" dy="18" fill="#eee">v: 4</tspan><tspan x="275.5" dy="18" fill="#eee">p: 188c</tspan></text>
+            <text x="275.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="275.5" dy="0" fill="#eee">d: 34</tspan><tspan x="275.5" dy="18" fill="#eee">v: 45</tspan><tspan x="275.5" dy="18" fill="#eee">p: 38c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="364.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="364.5" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="364.5" dy="18" fill="#f97316">S: Limited</tspan><tspan x="364.5" dy="18" fill="#22c55e">+249</tspan></text>
+            <text x="364.5" y="432" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="364.5" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="364.5" dy="18" fill="#86efac">S: High</tspan><tspan x="364.5" dy="18" fill="#ef4444">-6</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -750,10 +750,10 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="725.5" y="-18" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 38</tspan><tspan x="725.5" dy="18" fill="#eee">v: 49</tspan><tspan x="725.5" dy="18" fill="#eee">p: 104c</tspan></text>
+            <text x="725.5" y="-18" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 141</tspan><tspan x="725.5" dy="18" fill="#eee">v: 36</tspan><tspan x="725.5" dy="18" fill="#eee">p: 101c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="814.5" y="-18" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#ef4444">A: Restricted</tspan><tspan x="814.5" dy="18" fill="#ef4444">S: Scarce</tspan><tspan x="814.5" dy="18" fill="#22c55e">+60</tspan></text>
+            <text x="814.5" y="-18" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#22c55e">A: Strong</tspan><tspan x="814.5" dy="18" fill="#86efac">S: High</tspan><tspan x="814.5" dy="18" fill="#22c55e">+5</tspan></text>
         </g><g>
             <!-- Label background -->
             <rect
@@ -770,8 +770,8 @@
             />
 
             <!-- Left-aligned text (using multiline text) -->
-            <text x="725.5" y="1107" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 62</tspan><tspan x="725.5" dy="18" fill="#eee">v: 21</tspan><tspan x="725.5" dy="18" fill="#eee">p: 60c</tspan></text>
+            <text x="725.5" y="1107" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="start"><tspan x="725.5" dy="0" fill="#eee">d: 120</tspan><tspan x="725.5" dy="18" fill="#eee">v: 35</tspan><tspan x="725.5" dy="18" fill="#eee">p: 168c</tspan></text>
 
             <!-- Right-aligned text (using multiline text) -->
-            <text x="814.5" y="1107" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#86efac">A: Growing</tspan><tspan x="814.5" dy="18" fill="#fde047">S: Moderate</tspan><tspan x="814.5" dy="18" fill="#22c55e">+222</tspan></text>
+            <text x="814.5" y="1107" font-family="Arial" font-size="10" dominant-baseline="middle" text-anchor="end"><tspan x="814.5" dy="0" fill="#22c55e">A: Strong</tspan><tspan x="814.5" dy="18" fill="#22c55e">S: Abundant</tspan><tspan x="814.5" dy="18" fill="#22c55e">+106</tspan></text>
         </g></g></svg>
